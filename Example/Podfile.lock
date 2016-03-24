@@ -1,0 +1,14 @@
+PODS:
+  - LXPageViewWithButtonsViewController (0.1.0)
+
+DEPENDENCIES:
+  - LXPageViewWithButtonsViewController (from `../`)
+
+EXTERNAL SOURCES:
+  LXPageViewWithButtonsViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LXPageViewWithButtonsViewController: fe3f8f0ab1507ad2c043ef0214ba61f5aaec8c88
+
+COCOAPODS: 0.39.0

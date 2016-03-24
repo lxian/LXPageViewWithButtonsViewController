@@ -1,0 +1,6 @@
+framework module LXPageViewWithButtonsViewController {
+  umbrella header "LXPageViewWithButtonsViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

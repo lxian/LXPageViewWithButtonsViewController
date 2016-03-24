@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LXPageViewWithButtonsViewController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let page0VC = UIViewController()
+        page0VC.title = "Page 0"
+        page0VC.view.backgroundColor = UIColor.grayColor()
+        
+        let page1VC = UIViewController()
+        page1VC.title = "Page 1"
+        page1VC.view.backgroundColor = UIColor.yellowColor()
+        
+        let page2VC = UIViewController()
+        page2VC.title = "Page 2"
+        page2VC.view.backgroundColor = UIColor.cyanColor()
+        
+        let page3VC = UIViewController()
+        page3VC.title = "Page 3"
+        page3VC.view.backgroundColor = UIColor.redColor()
+        
+        let pwbVC = LXPageViewWithButtonsViewController()
+        
+        // Add view controllers to LXPageViewWithButtonsViewController
+        // view controller's title will be used as the button's title
+        pwbVC.viewControllers = [page0VC, page1VC, page2VC, page3VC]
+        
+        // Do customization with appreance property
+        // For more information, please look into LXPageViewWithButtonsViewController.Appreance struct
+        pwbVC.appreance.buttonsGap = 5
+        pwbVC.appreance.buttonFontSize = 15
+        pwbVC.appreance.buttonBackgroundColor = UIColor(white: 0.95, alpha: 1)
+        
+        self.window?.makeKeyWindow()
+        self.window?.rootViewController = UINavigationController(rootViewController: pwbVC)
         return true
     }
 

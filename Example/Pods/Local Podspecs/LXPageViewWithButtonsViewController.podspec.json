@@ -1,0 +1,25 @@
+{
+  "name": "LXPageViewWithButtonsViewController",
+  "version": "0.1.0",
+  "summary": "A short description of LXPageViewWithButtonsViewController.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LXPageViewWithButtonsViewController",
+  "license": "MIT",
+  "authors": {
+    "Shell Xian": "lxian2shell@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LXPageViewWithButtonsViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "LXPageViewWithButtonsViewController": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
