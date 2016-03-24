@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'LXPageViewWithButtonsViewController_Example', :exclusive => true do
+  pod 'LXPageViewWithButtonsViewController', :path => '../'
+end
+
+target 'LXPageViewWithButtonsViewController_Tests', :exclusive => true do
+  pod 'LXPageViewWithButtonsViewController', :path => '../'
+
+  
+end
