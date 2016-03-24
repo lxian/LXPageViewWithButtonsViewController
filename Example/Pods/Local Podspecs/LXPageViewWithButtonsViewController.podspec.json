@@ -1,15 +1,15 @@
 {
   "name": "LXPageViewWithButtonsViewController",
   "version": "0.1.0",
-  "summary": "A short description of LXPageViewWithButtonsViewController.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/LXPageViewWithButtonsViewController",
+  "summary": "A view controller combines UIPageViewController and page selection buttons",
+  "description": "This view controller wraps a UIPageViewController and adds a row a page selection buttons at the top. So you can either swipe or tap top buttons to navigate through the view controllers you added to it.",
+  "homepage": "https://github.com/lxian/LXPageViewWithButtonsViewController",
   "license": "MIT",
   "authors": {
-    "Shell Xian": "lxian2shell@gmail.com"
+    "Li Xian": "lxian2shell@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/LXPageViewWithButtonsViewController.git",
+    "git": "https://github.com/lxian/LXPageViewWithButtonsViewController.git",
     "tag": "0.1.0"
   },
   "platforms": {

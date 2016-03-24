@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LXPageViewWithButtonsViewController: fe3f8f0ab1507ad2c043ef0214ba61f5aaec8c88
+  LXPageViewWithButtonsViewController: a05bd7d4eda47f5f59943b7e207a4039450d6ed5
 
 COCOAPODS: 0.39.0
