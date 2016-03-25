@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EC36D4D45D109570CA859CEB'
+               BlueprintIdentifier = '06A012941D96359989E5EADF'
                BlueprintName = 'LXPageViewWithButtonsViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LXPageViewWithButtonsViewController.framework'>

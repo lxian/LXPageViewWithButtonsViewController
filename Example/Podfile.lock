@@ -1,5 +1,5 @@
 PODS:
-  - LXPageViewWithButtonsViewController (0.0.1)
+  - LXPageViewWithButtonsViewController (0.0.2)
 
 DEPENDENCIES:
   - LXPageViewWithButtonsViewController (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LXPageViewWithButtonsViewController: e18f5a8063158992fb345f7cbaff17f63987c6b2
+  LXPageViewWithButtonsViewController: 62fe91cd5723f5f07ccd3b8541047b85a953b92c
 
 COCOAPODS: 0.39.0
