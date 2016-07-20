@@ -42,9 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Do customization with appreance property
         // For more information, please look into LXPageViewWithButtonsViewController.Appreance struct
-        pwbVC.appreance.buttonsGap = 5
-        pwbVC.appreance.buttonFontSize = 15
-        pwbVC.appreance.buttonBackgroundColor = UIColor(white: 0.95, alpha: 1)
+        pwbVC.appearance.buttonsGap = 5
+        pwbVC.appearance.buttonFontSize = 15
+        pwbVC.appearance.buttonBackgroundColor = UIColor(white: 0.95, alpha: 1)
         
         self.window?.makeKeyWindow()
         self.window?.rootViewController = UINavigationController(rootViewController: pwbVC)
