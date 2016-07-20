@@ -11,11 +11,6 @@ Pod::Spec.new do |s|
   s.version          = "0.0.2"
   s.summary          = "A view controller combines UIPageViewController and page selection buttons"
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
                         This view controller wraps a UIPageViewController and adds a row a page selection buttons at the top. So you can either swipe or tap top buttons to navigate through the view controllers you added to it.
                        DESC
@@ -34,7 +29,4 @@ Pod::Spec.new do |s|
     'LXPageViewWithButtonsViewController' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

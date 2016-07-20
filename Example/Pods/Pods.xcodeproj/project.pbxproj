@@ -1,1775 +1,804 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00C0385FD1D22760057DD64D3F8622A4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CB7CFDE611FAC16295315F11918C9FE8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09AA473B84585AC125F2B9467537E70B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1A07D83711BD40DAA928B2369ECB3097</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests/Pods-LXPageViewWithButtonsViewController_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_LXPageViewWithButtonsViewController_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0B72E23DEE4BA070B5DEB604C736CF80</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0BC46708CDF3DB4B9C487DA2161A6FE4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>73D821B04614C349011A88E9D8C35818</string>
-				<string>1293729F637FFB4B9C981AC830F73D27</string>
-				<string>5DC55D2588AAE390CEEF3E1D06ABA0CB</string>
-				<string>A1539E1351281ED9738BEF591A7348E4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C3C5CC6393624F37D38BB64850DF8CA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1293729F637FFB4B9C981AC830F73D27</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>LXPageViewWithButtonsViewController.framework</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewController.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1834FE373A6AF0D8D617C2B605942042</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AC549CAD3F8178AB482DFEFA5DCAAEC4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>LXPageViewWithButtonsViewController</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1A07D83711BD40DAA928B2369ECB3097</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1C04E1651BA7306AF8E2492CE9BF75B5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>61C37D9AF73D5D1369A5321517E81B74</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1D201472F51925A5310F19C942C30E6D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1DA4309C0CEE7C9F531037B84D2B6DDB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AC549CAD3F8178AB482DFEFA5DCAAEC4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/LXPageViewWithButtonsViewController/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>LXPageViewWithButtonsViewController</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1EF95F066186E8655DC9B4DE6D76F194</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F012C8AD03AD11071F63E2DCD233B26B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1F0455BF1E5DD5CDA38CEC4EA65FDD11</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>373EB2A798FD6796C979AD7DD19AC982</string>
-			<key>remoteInfo</key>
-			<string>LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController</string>
-		</dict>
-		<key>1F6F1B188BE5188C499C5EB6487A8211</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AC549CAD3F8178AB482DFEFA5DCAAEC4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>LXPageViewWithButtonsViewController</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>22CE2A5DC116664FFC42245EE943D6A4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewControllerDataSource.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25D54031548B578F5E1F46342D05AB0D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5359A960D71263D43B0C7CCFB52B31B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>2A03F2BDF64B6EFC4231C264402581E8</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B88AF2BACDFB55B0350F86EEBDDE08ED</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C8D784EEA69B9C1CEE15F9E46B82882C</string>
-				<string>00C0385FD1D22760057DD64D3F8622A4</string>
-				<string>60C8F40C0FF1F742DDCE0FDF1B730452</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CB2F2228C821463FE5EF4AA48E45F552</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests</string>
-			<key>productName</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests</string>
-			<key>productReference</key>
-			<string>A1539E1351281ED9738BEF591A7348E4</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>2D7BB9F276DF5BA4219D963052B19EFC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>ADEF1AE1C43E955ED0457464FA07F546</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Example/Pods-LXPageViewWithButtonsViewController_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_LXPageViewWithButtonsViewController_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>552D02D5BA751AC2E8790D2811D496CA</string>
-				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2F6ED7A6E9E68F66D7F8B47EB0A73F22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>926FD9E0D2388049CE747F0D25772420</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pod</string>
-			<key>path</key>
-			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3153974CBED82C6C27266C6292FC658F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewController.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3223C94141A5332D1569668C97489882</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>333BC20348EC02D7C10CFB1145AEEC2D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2F6ED7A6E9E68F66D7F8B47EB0A73F22</string>
-				<string>3F064D9FF8FA804844B87148CC3419C1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>LXPageViewWithButtonsViewController</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>36468721D96A920C3748A0175394C8D0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>LXPageViewWithButtonsViewController</string>
-			<key>target</key>
-			<string>486D0585157D92C75409A2DE1109C0DC</string>
-			<key>targetProxy</key>
-			<string>FA48459CE9D74F51F52489DA6C38E268</string>
-		</dict>
-		<key>373EB2A798FD6796C979AD7DD19AC982</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8CA1625D55EB850D654EC6C341167233</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3E145FC1E659F7C5078A7ED73EABB049</string>
-				<string>B3FD882E00B4D10867BB9B745AEEEE78</string>
-				<string>9BA103E2AD4B876D24F158ABD512ECE5</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController</string>
-			<key>productName</key>
-			<string>LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController</string>
-			<key>productReference</key>
-			<string>73D821B04614C349011A88E9D8C35818</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>38F1A6B6536ACC35260654680CADC654</key>
-		<dict>
-			<key>fileRef</key>
-			<string>22CE2A5DC116664FFC42245EE943D6A4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>39A137A337567966F35D50A0B43350CF</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>486D0585157D92C75409A2DE1109C0DC</string>
-			<key>remoteInfo</key>
-			<string>LXPageViewWithButtonsViewController</string>
-		</dict>
-		<key>3E145FC1E659F7C5078A7ED73EABB049</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3F064D9FF8FA804844B87148CC3419C1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>559330C45BD185DCBF985F005AA062DA</string>
-				<string>3153974CBED82C6C27266C6292FC658F</string>
-				<string>AC549CAD3F8178AB482DFEFA5DCAAEC4</string>
-				<string>707DF6776FDE2FD828D5B30479C496D5</string>
-				<string>0B72E23DEE4BA070B5DEB604C736CF80</string>
-				<string>AF17C5EF597DA295E11FA6E89BCF81E5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/LXPageViewWithButtonsViewController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42F0DCD231F60B4C5F6B789EEA090519</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5C075573390A6C514ED52244DB3E163E</string>
-				<string>A3BE486161ACCF5E80D65EC19ED45DD1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4746C11DED7B57F8704B6DB2B5E53973</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D78DFE8B0AF8C3FFF4CD3C2A792CFC17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>4783AD5570FCB66652AEC55FCF5703D3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>47D213D8541A6CA4FB074C3DC9FF9B57</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>486D0585157D92C75409A2DE1109C0DC</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BA74D05E5744FAD4B2E50091D4268475</string>
-			<key>buildPhases</key>
-			<array>
-				<string>53BD39F9C878B102CAF23769D2DCAEBF</string>
-				<string>4746C11DED7B57F8704B6DB2B5E53973</string>
-				<string>1EF95F066186E8655DC9B4DE6D76F194</string>
-				<string>8072063B865961A98970FE90BC0D7297</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>4E889AB293F5BB35967101EAB8AF56A8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>LXPageViewWithButtonsViewController</string>
-			<key>productName</key>
-			<string>LXPageViewWithButtonsViewController</string>
-			<key>productReference</key>
-			<string>1293729F637FFB4B9C981AC830F73D27</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>4E889AB293F5BB35967101EAB8AF56A8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController</string>
-			<key>target</key>
-			<string>373EB2A798FD6796C979AD7DD19AC982</string>
-			<key>targetProxy</key>
-			<string>1F0455BF1E5DD5CDA38CEC4EA65FDD11</string>
-		</dict>
-		<key>5359A960D71263D43B0C7CCFB52B31B6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>53BD39F9C878B102CAF23769D2DCAEBF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>614A19EA7F6FBA498704CA5D8AAB5974</string>
-				<string>EDA8806B0D4DB089D6054E7F965D66A8</string>
-				<string>38F1A6B6536ACC35260654680CADC654</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>552D02D5BA751AC2E8790D2811D496CA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>559330C45BD185DCBF985F005AA062DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>58AA4D9FF3680D6E987CC49B65EA6148</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AC7D23FA8D3C0C0810176989FC68849E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5C075573390A6C514ED52244DB3E163E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F3F84704C2C4E640F42C28D1522AEFE6</string>
-				<string>6E21B1C49DAE72FE668635AE95418F54</string>
-				<string>98B445E88E68761DD2AD0749010F2ED5</string>
-				<string>95A9E3AF4CC4E69820DFAB0B4C1DC8C4</string>
-				<string>3223C94141A5332D1569668C97489882</string>
-				<string>8417165ABDF726D5C33D4ACF60AD593B</string>
-				<string>EADB7EFB0F753689A9DDF7D832B070C3</string>
-				<string>0C3C5CC6393624F37D38BB64850DF8CA</string>
-				<string>A1FDFB9BFF0EB103263432AEB31B7B09</string>
-				<string>ADEF1AE1C43E955ED0457464FA07F546</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5DC55D2588AAE390CEEF3E1D06ABA0CB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_LXPageViewWithButtonsViewController_Example.framework</string>
-			<key>path</key>
-			<string>Pods_LXPageViewWithButtonsViewController_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>60C8F40C0FF1F742DDCE0FDF1B730452</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>25D54031548B578F5E1F46342D05AB0D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>614A19EA7F6FBA498704CA5D8AAB5974</key>
-		<dict>
-			<key>fileRef</key>
-			<string>707DF6776FDE2FD828D5B30479C496D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>61C37D9AF73D5D1369A5321517E81B74</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>627E3D33FB978FE2EC76FCD77F0F397A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A1FDFB9BFF0EB103263432AEB31B7B09</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Example/Pods-LXPageViewWithButtonsViewController_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_LXPageViewWithButtonsViewController_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>65852BB9B14B955F6B2463204CAB2F8C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8A7A0E6FDA6BBEA5F1170653139C99E0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests/Pods-LXPageViewWithButtonsViewController_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_LXPageViewWithButtonsViewController_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6E21B1C49DAE72FE668635AE95418F54</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>707DF6776FDE2FD828D5B30479C496D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73D821B04614C349011A88E9D8C35818</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>LXPageViewWithButtonsViewController.bundle</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewController.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>76E308CAF4C0BC96932518EDAD055255</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>DBE93C12BFF1E0BB75EF9E43DF297E07</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>0BC46708CDF3DB4B9C487DA2161A6FE4</string>
-				<string>42F0DCD231F60B4C5F6B789EEA090519</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8072063B865961A98970FE90BC0D7297</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D40778DFF4ACB2485C2A7EF5D723FA08</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>81204BC799C65F733385D1C27654C5FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>83BDDF101158DC420A1FB5CE69484050</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0C3C5CC6393624F37D38BB64850DF8CA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8417165ABDF726D5C33D4ACF60AD593B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>844F63B9A5E1D7B70031E364774B31F4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>83BDDF101158DC420A1FB5CE69484050</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8A7A0E6FDA6BBEA5F1170653139C99E0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8CA1625D55EB850D654EC6C341167233</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1834FE373A6AF0D8D617C2B605942042</string>
-				<string>1F6F1B188BE5188C499C5EB6487A8211</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>926FD9E0D2388049CE747F0D25772420</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4783AD5570FCB66652AEC55FCF5703D3</string>
-				<string>22CE2A5DC116664FFC42245EE943D6A4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>95A9E3AF4CC4E69820DFAB0B4C1DC8C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>98B445E88E68761DD2AD0749010F2ED5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9BA103E2AD4B876D24F158ABD512ECE5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A1539E1351281ED9738BEF591A7348E4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_LXPageViewWithButtonsViewController_Tests.framework</string>
-			<key>path</key>
-			<string>Pods_LXPageViewWithButtonsViewController_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A1FDFB9BFF0EB103263432AEB31B7B09</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3BE486161ACCF5E80D65EC19ED45DD1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9AF6B63F1CE2405A4A2C4B77B248353</string>
-				<string>1D201472F51925A5310F19C942C30E6D</string>
-				<string>47D213D8541A6CA4FB074C3DC9FF9B57</string>
-				<string>76E308CAF4C0BC96932518EDAD055255</string>
-				<string>CCB7C286E6D73D6E06AA8E7716AD7500</string>
-				<string>FA8FC7D11E64B4DBAAFCE6B6FA04FAE4</string>
-				<string>81204BC799C65F733385D1C27654C5FC</string>
-				<string>5359A960D71263D43B0C7CCFB52B31B6</string>
-				<string>1A07D83711BD40DAA928B2369ECB3097</string>
-				<string>8A7A0E6FDA6BBEA5F1170653139C99E0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A6AD3CE8F2DB021246939DEFA90ACFAB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C31B32404E6D9ED6E33D941DF9C85502</string>
-			<key>buildPhases</key>
-			<array>
-				<string>58AA4D9FF3680D6E987CC49B65EA6148</string>
-				<string>1C04E1651BA7306AF8E2492CE9BF75B5</string>
-				<string>844F63B9A5E1D7B70031E364774B31F4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>36468721D96A920C3748A0175394C8D0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example</string>
-			<key>productName</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example</string>
-			<key>productReference</key>
-			<string>5DC55D2588AAE390CEEF3E1D06ABA0CB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>AC549CAD3F8178AB482DFEFA5DCAAEC4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AC7D23FA8D3C0C0810176989FC68849E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3223C94141A5332D1569668C97489882</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ADEF1AE1C43E955ED0457464FA07F546</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF17C5EF597DA295E11FA6E89BCF81E5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LXPageViewWithButtonsViewController-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B3FD882E00B4D10867BB9B745AEEEE78</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B88AF2BACDFB55B0350F86EEBDDE08ED</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>09AA473B84585AC125F2B9467537E70B</string>
-				<string>65852BB9B14B955F6B2463204CAB2F8C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B9AF6B63F1CE2405A4A2C4B77B248353</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BA74D05E5744FAD4B2E50091D4268475</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1DA4309C0CEE7C9F531037B84D2B6DDB</string>
-				<string>BE995B17C7EC2ECFD1EC48BAE1C5D21C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE995B17C7EC2ECFD1EC48BAE1C5D21C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AC549CAD3F8178AB482DFEFA5DCAAEC4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/LXPageViewWithButtonsViewController/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>LXPageViewWithButtonsViewController</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C31B32404E6D9ED6E33D941DF9C85502</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>627E3D33FB978FE2EC76FCD77F0F397A</string>
-				<string>2D7BB9F276DF5BA4219D963052B19EFC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C8D784EEA69B9C1CEE15F9E46B82882C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E28DB7E92ACBD71506F13E06F0729A64</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB2F2228C821463FE5EF4AA48E45F552</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>LXPageViewWithButtonsViewController</string>
-			<key>target</key>
-			<string>486D0585157D92C75409A2DE1109C0DC</string>
-			<key>targetProxy</key>
-			<string>39A137A337567966F35D50A0B43350CF</string>
-		</dict>
-		<key>CB7CFDE611FAC16295315F11918C9FE8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CCB7C286E6D73D6E06AA8E7716AD7500</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D40778DFF4ACB2485C2A7EF5D723FA08</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF17C5EF597DA295E11FA6E89BCF81E5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>0BC46708CDF3DB4B9C487DA2161A6FE4</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>486D0585157D92C75409A2DE1109C0DC</string>
-				<string>373EB2A798FD6796C979AD7DD19AC982</string>
-				<string>A6AD3CE8F2DB021246939DEFA90ACFAB</string>
-				<string>2A03F2BDF64B6EFC4231C264402581E8</string>
-			</array>
-		</dict>
-		<key>D78DFE8B0AF8C3FFF4CD3C2A792CFC17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DBE93C12BFF1E0BB75EF9E43DF297E07</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>333BC20348EC02D7C10CFB1145AEEC2D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E28DB7E92ACBD71506F13E06F0729A64</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CCB7C286E6D73D6E06AA8E7716AD7500</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EADB7EFB0F753689A9DDF7D832B070C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDA8806B0D4DB089D6054E7F965D66A8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4783AD5570FCB66652AEC55FCF5703D3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F012C8AD03AD11071F63E2DCD233B26B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>73D821B04614C349011A88E9D8C35818</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F3F84704C2C4E640F42C28D1522AEFE6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA48459CE9D74F51F52489DA6C38E268</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>486D0585157D92C75409A2DE1109C0DC</string>
-			<key>remoteInfo</key>
-			<string>LXPageViewWithButtonsViewController</string>
-		</dict>
-		<key>FA8FC7D11E64B4DBAAFCE6B6FA04FAE4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-LXPageViewWithButtonsViewController_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38F1A6B6536ACC35260654680CADC654 /* LXPageViewWithButtonsViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9810548FB8CFD1443A70175431DE727C /* LXPageViewWithButtonsViewControllerDataSource.swift */; };
+		46020C05AE1153F102CBF1C97BE81C38 /* Pods-LXPageViewWithButtonsViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7C286E6D73D6E06AA8E7716AD7500 /* Pods-LXPageViewWithButtonsViewController_Tests-dummy.m */; };
+		572167ED8CEC3F6770F6C6259647922D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5E960CB76A4081F180C9D56FEFDD7E93 /* Pods-LXPageViewWithButtonsViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3C5CC6393624F37D38BB64850DF8CA /* Pods-LXPageViewWithButtonsViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		614A19EA7F6FBA498704CA5D8AAB5974 /* LXPageViewWithButtonsViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EBA72D4FEBA8A787F3702CA2945F /* LXPageViewWithButtonsViewController-dummy.m */; };
+		A035AFD1D701562A0B572FBD41AD98F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A4670130E3AB02006BAF55E8D53A07AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		CAEA2DACDE8CCB2876E496BFA9C72E69 /* Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5359A960D71263D43B0C7CCFB52B31B6 /* Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB66447C385CD0962FCD3E6DC053990E /* Pods-LXPageViewWithButtonsViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3223C94141A5332D1569668C97489882 /* Pods-LXPageViewWithButtonsViewController_Example-dummy.m */; };
+		D40778DFF4ACB2485C2A7EF5D723FA08 /* LXPageViewWithButtonsViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AAF057F5C72E9CF0734546E56D344C /* LXPageViewWithButtonsViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDA8806B0D4DB089D6054E7F965D66A8 /* LXPageViewWithButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2762CEB6F49C681A7EF5E9EBF7798256 /* LXPageViewWithButtonsViewController.swift */; };
+		F012C8AD03AD11071F63E2DCD233B26B /* LXPageViewWithButtonsViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F0455BF1E5DD5CDA38CEC4EA65FDD11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 373EB2A798FD6796C979AD7DD19AC982;
+			remoteInfo = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
+		};
+		3EFEC8B99985DB9796310BB8CB983FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 486D0585157D92C75409A2DE1109C0DC;
+			remoteInfo = LXPageViewWithButtonsViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C3C5CC6393624F37D38BB64850DF8CA /* Pods-LXPageViewWithButtonsViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXPageViewWithButtonsViewController_Example-umbrella.h"; sourceTree = "<group>"; };
+		1A07D83711BD40DAA928B2369ECB3097 /* Pods-LXPageViewWithButtonsViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXPageViewWithButtonsViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D201472F51925A5310F19C942C30E6D /* Pods-LXPageViewWithButtonsViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LXPageViewWithButtonsViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		24AAF057F5C72E9CF0734546E56D344C /* LXPageViewWithButtonsViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXPageViewWithButtonsViewController-umbrella.h"; sourceTree = "<group>"; };
+		2762CEB6F49C681A7EF5E9EBF7798256 /* LXPageViewWithButtonsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXPageViewWithButtonsViewController.swift; sourceTree = "<group>"; };
+		3223C94141A5332D1569668C97489882 /* Pods-LXPageViewWithButtonsViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXPageViewWithButtonsViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		359CA8F438E15C7EBB40AAC0F4A8A71C /* LXPageViewWithButtonsViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXPageViewWithButtonsViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D213D8541A6CA4FB074C3DC9FF9B57 /* Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5359A960D71263D43B0C7CCFB52B31B6 /* Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		56233DA3D4E7DE6E163B1C707BCB4BF3 /* LXPageViewWithButtonsViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LXPageViewWithButtonsViewController.modulemap; sourceTree = "<group>"; };
+		63C8C700F8B388B0AF7510D3288EA42B /* ResourceBundle-LXPageViewWithButtonsViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LXPageViewWithButtonsViewController-Info.plist"; sourceTree = "<group>"; };
+		6E21B1C49DAE72FE668635AE95418F54 /* Pods-LXPageViewWithButtonsViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LXPageViewWithButtonsViewController_Example.modulemap"; sourceTree = "<group>"; };
+		76E308CAF4C0BC96932518EDAD055255 /* Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		81204BC799C65F733385D1C27654C5FC /* Pods-LXPageViewWithButtonsViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXPageViewWithButtonsViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXPageViewWithButtonsViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8417165ABDF726D5C33D4ACF60AD593B /* Pods-LXPageViewWithButtonsViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXPageViewWithButtonsViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8A7A0E6FDA6BBEA5F1170653139C99E0 /* Pods-LXPageViewWithButtonsViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXPageViewWithButtonsViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		91B3EBA72D4FEBA8A787F3702CA2945F /* LXPageViewWithButtonsViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXPageViewWithButtonsViewController-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A9E3AF4CC4E69820DFAB0B4C1DC8C4 /* Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9810548FB8CFD1443A70175431DE727C /* LXPageViewWithButtonsViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXPageViewWithButtonsViewControllerDataSource.swift; sourceTree = "<group>"; };
+		98B445E88E68761DD2AD0749010F2ED5 /* Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A1FDFB9BFF0EB103263432AEB31B7B09 /* Pods-LXPageViewWithButtonsViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXPageViewWithButtonsViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ADEF1AE1C43E955ED0457464FA07F546 /* Pods-LXPageViewWithButtonsViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXPageViewWithButtonsViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B9AF6B63F1CE2405A4A2C4B77B248353 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB7C286E6D73D6E06AA8E7716AD7500 /* Pods-LXPageViewWithButtonsViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXPageViewWithButtonsViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3F61D1E07243021BC19F33FA1D97191 /* LXPageViewWithButtonsViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXPageViewWithButtonsViewController-prefix.pch"; sourceTree = "<group>"; };
+		DE933563D12FF85EBD2723781C78E79B /* Pods_LXPageViewWithButtonsViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXPageViewWithButtonsViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DA85009AEEC4BD6CBFF790FA5D6799 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EADB7EFB0F753689A9DDF7D832B070C3 /* Pods-LXPageViewWithButtonsViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXPageViewWithButtonsViewController_Example-resources.sh"; sourceTree = "<group>"; };
+		F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXPageViewWithButtonsViewController.xcconfig; sourceTree = "<group>"; };
+		F3F84704C2C4E640F42C28D1522AEFE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8FC7D11E64B4DBAAFCE6B6FA04FAE4 /* Pods-LXPageViewWithButtonsViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXPageViewWithButtonsViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		FEC55722F01C6D5471401A6BB344A4DE /* Pods_LXPageViewWithButtonsViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXPageViewWithButtonsViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15F8E423155BEFCDB1993B10337F2E16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572167ED8CEC3F6770F6C6259647922D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4746C11DED7B57F8704B6DB2B5E53973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A035AFD1D701562A0B572FBD41AD98F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3FD882E00B4D10867BB9B745AEEEE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4248E237436F9F1A0920D859CAC6724 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4670130E3AB02006BAF55E8D53A07AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		094F1B58711EF93370D476CD29F8356B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */,
+				359CA8F438E15C7EBB40AAC0F4A8A71C /* LXPageViewWithButtonsViewController.framework */,
+				FEC55722F01C6D5471401A6BB344A4DE /* Pods_LXPageViewWithButtonsViewController_Example.framework */,
+				DE933563D12FF85EBD2723781C78E79B /* Pods_LXPageViewWithButtonsViewController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D5BC8F040EA58C3BF85253108595692 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2762CEB6F49C681A7EF5E9EBF7798256 /* LXPageViewWithButtonsViewController.swift */,
+				9810548FB8CFD1443A70175431DE727C /* LXPageViewWithButtonsViewControllerDataSource.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		397292DBFED82CBF28E3DBE65B70C2F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5DA85009AEEC4BD6CBFF790FA5D6799 /* Info.plist */,
+				56233DA3D4E7DE6E163B1C707BCB4BF3 /* LXPageViewWithButtonsViewController.modulemap */,
+				F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */,
+				91B3EBA72D4FEBA8A787F3702CA2945F /* LXPageViewWithButtonsViewController-dummy.m */,
+				D3F61D1E07243021BC19F33FA1D97191 /* LXPageViewWithButtonsViewController-prefix.pch */,
+				24AAF057F5C72E9CF0734546E56D344C /* LXPageViewWithButtonsViewController-umbrella.h */,
+				63C8C700F8B388B0AF7510D3288EA42B /* ResourceBundle-LXPageViewWithButtonsViewController-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LXPageViewWithButtonsViewController";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		42F0DCD231F60B4C5F6B789EEA090519 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C075573390A6C514ED52244DB3E163E /* Pods-LXPageViewWithButtonsViewController_Example */,
+				A3BE486161ACCF5E80D65EC19ED45DD1 /* Pods-LXPageViewWithButtonsViewController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5C075573390A6C514ED52244DB3E163E /* Pods-LXPageViewWithButtonsViewController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F3F84704C2C4E640F42C28D1522AEFE6 /* Info.plist */,
+				6E21B1C49DAE72FE668635AE95418F54 /* Pods-LXPageViewWithButtonsViewController_Example.modulemap */,
+				98B445E88E68761DD2AD0749010F2ED5 /* Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.markdown */,
+				95A9E3AF4CC4E69820DFAB0B4C1DC8C4 /* Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.plist */,
+				3223C94141A5332D1569668C97489882 /* Pods-LXPageViewWithButtonsViewController_Example-dummy.m */,
+				8417165ABDF726D5C33D4ACF60AD593B /* Pods-LXPageViewWithButtonsViewController_Example-frameworks.sh */,
+				EADB7EFB0F753689A9DDF7D832B070C3 /* Pods-LXPageViewWithButtonsViewController_Example-resources.sh */,
+				0C3C5CC6393624F37D38BB64850DF8CA /* Pods-LXPageViewWithButtonsViewController_Example-umbrella.h */,
+				A1FDFB9BFF0EB103263432AEB31B7B09 /* Pods-LXPageViewWithButtonsViewController_Example.debug.xcconfig */,
+				ADEF1AE1C43E955ED0457464FA07F546 /* Pods-LXPageViewWithButtonsViewController_Example.release.xcconfig */,
+			);
+			name = "Pods-LXPageViewWithButtonsViewController_Example";
+			path = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				DBE93C12BFF1E0BB75EF9E43DF297E07 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				094F1B58711EF93370D476CD29F8356B /* Products */,
+				42F0DCD231F60B4C5F6B789EEA090519 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A3BE486161ACCF5E80D65EC19ED45DD1 /* Pods-LXPageViewWithButtonsViewController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B9AF6B63F1CE2405A4A2C4B77B248353 /* Info.plist */,
+				1D201472F51925A5310F19C942C30E6D /* Pods-LXPageViewWithButtonsViewController_Tests.modulemap */,
+				47D213D8541A6CA4FB074C3DC9FF9B57 /* Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.markdown */,
+				76E308CAF4C0BC96932518EDAD055255 /* Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.plist */,
+				CCB7C286E6D73D6E06AA8E7716AD7500 /* Pods-LXPageViewWithButtonsViewController_Tests-dummy.m */,
+				FA8FC7D11E64B4DBAAFCE6B6FA04FAE4 /* Pods-LXPageViewWithButtonsViewController_Tests-frameworks.sh */,
+				81204BC799C65F733385D1C27654C5FC /* Pods-LXPageViewWithButtonsViewController_Tests-resources.sh */,
+				5359A960D71263D43B0C7CCFB52B31B6 /* Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h */,
+				1A07D83711BD40DAA928B2369ECB3097 /* Pods-LXPageViewWithButtonsViewController_Tests.debug.xcconfig */,
+				8A7A0E6FDA6BBEA5F1170653139C99E0 /* Pods-LXPageViewWithButtonsViewController_Tests.release.xcconfig */,
+			);
+			name = "Pods-LXPageViewWithButtonsViewController_Tests";
+			path = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4FFE12646F5AEFACE60A8052CE6D95F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2D5BC8F040EA58C3BF85253108595692 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		CFAF25CDA063E744CD7AC1BDA68B0374 /* LXPageViewWithButtonsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFE12646F5AEFACE60A8052CE6D95F /* Pod */,
+				397292DBFED82CBF28E3DBE65B70C2F4 /* Support Files */,
+			);
+			name = LXPageViewWithButtonsViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DBE93C12BFF1E0BB75EF9E43DF297E07 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF25CDA063E744CD7AC1BDA68B0374 /* LXPageViewWithButtonsViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8072063B865961A98970FE90BC0D7297 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40778DFF4ACB2485C2A7EF5D723FA08 /* LXPageViewWithButtonsViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91EE8EBB9D9584456D7A7775D4D4489F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E960CB76A4081F180C9D56FEFDD7E93 /* Pods-LXPageViewWithButtonsViewController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96127D9574757F16FC6DC1216E5B5CFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAEA2DACDE8CCB2876E496BFA9C72E69 /* Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		373EB2A798FD6796C979AD7DD19AC982 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CA1625D55EB850D654EC6C341167233 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController" */;
+			buildPhases = (
+				3E145FC1E659F7C5078A7ED73EABB049 /* Sources */,
+				B3FD882E00B4D10867BB9B745AEEEE78 /* Frameworks */,
+				9BA103E2AD4B876D24F158ABD512ECE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
+			productName = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
+			productReference = 83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		486D0585157D92C75409A2DE1109C0DC /* LXPageViewWithButtonsViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA74D05E5744FAD4B2E50091D4268475 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController" */;
+			buildPhases = (
+				53BD39F9C878B102CAF23769D2DCAEBF /* Sources */,
+				4746C11DED7B57F8704B6DB2B5E53973 /* Frameworks */,
+				1EF95F066186E8655DC9B4DE6D76F194 /* Resources */,
+				8072063B865961A98970FE90BC0D7297 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E889AB293F5BB35967101EAB8AF56A8 /* PBXTargetDependency */,
+			);
+			name = LXPageViewWithButtonsViewController;
+			productName = LXPageViewWithButtonsViewController;
+			productReference = 359CA8F438E15C7EBB40AAC0F4A8A71C /* LXPageViewWithButtonsViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9959399C74B3E858ACD41361C8F9372C /* Pods-LXPageViewWithButtonsViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D37FB29355D17D6B254B5639722FBF /* Build configuration list for PBXNativeTarget "Pods-LXPageViewWithButtonsViewController_Example" */;
+			buildPhases = (
+				30BC76AC0B6081A3B3D21885A45F9ED1 /* Sources */,
+				F4248E237436F9F1A0920D859CAC6724 /* Frameworks */,
+				91EE8EBB9D9584456D7A7775D4D4489F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4017B6ED51D2929BA66147ED66A26B82 /* PBXTargetDependency */,
+			);
+			name = "Pods-LXPageViewWithButtonsViewController_Example";
+			productName = "Pods-LXPageViewWithButtonsViewController_Example";
+			productReference = FEC55722F01C6D5471401A6BB344A4DE /* Pods_LXPageViewWithButtonsViewController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4CBCE26369DE9345D18866DB8CEBAB5 /* Pods-LXPageViewWithButtonsViewController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB2E0FBF8E60D367FE043949931500A /* Build configuration list for PBXNativeTarget "Pods-LXPageViewWithButtonsViewController_Tests" */;
+			buildPhases = (
+				F28BEFC9A684CCEFF247A7C08A78A008 /* Sources */,
+				15F8E423155BEFCDB1993B10337F2E16 /* Frameworks */,
+				96127D9574757F16FC6DC1216E5B5CFF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LXPageViewWithButtonsViewController_Tests";
+			productName = "Pods-LXPageViewWithButtonsViewController_Tests";
+			productReference = DE933563D12FF85EBD2723781C78E79B /* Pods_LXPageViewWithButtonsViewController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 094F1B58711EF93370D476CD29F8356B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				486D0585157D92C75409A2DE1109C0DC /* LXPageViewWithButtonsViewController */,
+				373EB2A798FD6796C979AD7DD19AC982 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */,
+				9959399C74B3E858ACD41361C8F9372C /* Pods-LXPageViewWithButtonsViewController_Example */,
+				C4CBCE26369DE9345D18866DB8CEBAB5 /* Pods-LXPageViewWithButtonsViewController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EF95F066186E8655DC9B4DE6D76F194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F012C8AD03AD11071F63E2DCD233B26B /* LXPageViewWithButtonsViewController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA103E2AD4B876D24F158ABD512ECE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30BC76AC0B6081A3B3D21885A45F9ED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB66447C385CD0962FCD3E6DC053990E /* Pods-LXPageViewWithButtonsViewController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E145FC1E659F7C5078A7ED73EABB049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53BD39F9C878B102CAF23769D2DCAEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614A19EA7F6FBA498704CA5D8AAB5974 /* LXPageViewWithButtonsViewController-dummy.m in Sources */,
+				EDA8806B0D4DB089D6054E7F965D66A8 /* LXPageViewWithButtonsViewController.swift in Sources */,
+				38F1A6B6536ACC35260654680CADC654 /* LXPageViewWithButtonsViewControllerDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28BEFC9A684CCEFF247A7C08A78A008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46020C05AE1153F102CBF1C97BE81C38 /* Pods-LXPageViewWithButtonsViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4017B6ED51D2929BA66147ED66A26B82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LXPageViewWithButtonsViewController;
+			target = 486D0585157D92C75409A2DE1109C0DC /* LXPageViewWithButtonsViewController */;
+			targetProxy = 3EFEC8B99985DB9796310BB8CB983FAA /* PBXContainerItemProxy */;
+		};
+		4E889AB293F5BB35967101EAB8AF56A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
+			target = 373EB2A798FD6796C979AD7DD19AC982 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */;
+			targetProxy = 1F0455BF1E5DD5CDA38CEC4EA65FDD11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0228A45555A1BEEB9663C3C7071C089A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LXPageViewWithButtonsViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/ResourceBundle-LXPageViewWithButtonsViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LXPageViewWithButtonsViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48255E22291705176DB911B5AB7DFEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LXPageViewWithButtonsViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/ResourceBundle-LXPageViewWithButtonsViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LXPageViewWithButtonsViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		60F63A7FA10D46B19F33677D7DC12642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1FDFB9BFF0EB103263432AEB31B7B09 /* Pods-LXPageViewWithButtonsViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Example/Pods-LXPageViewWithButtonsViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LXPageViewWithButtonsViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70820A114845994C0F4FC53ECBD55BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7A0E6FDA6BBEA5F1170653139C99E0 /* Pods-LXPageViewWithButtonsViewController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests/Pods-LXPageViewWithButtonsViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LXPageViewWithButtonsViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6C9DF4DE008FD622D0735ED1357FE39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A07D83711BD40DAA928B2369ECB3097 /* Pods-LXPageViewWithButtonsViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests/Pods-LXPageViewWithButtonsViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LXPageViewWithButtonsViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E9E5A3D013B19F60C7D75AE1B0B58510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LXPageViewWithButtonsViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDDA02D10783F25E003651E7E88B1F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LXPageViewWithButtonsViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1EB91E9EAB2EA028DAB1394EA4BF492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADEF1AE1C43E955ED0457464FA07F546 /* Pods-LXPageViewWithButtonsViewController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Example/Pods-LXPageViewWithButtonsViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LXPageViewWithButtonsViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CA1625D55EB850D654EC6C341167233 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48255E22291705176DB911B5AB7DFEE0 /* Debug */,
+				0228A45555A1BEEB9663C3C7071C089A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D37FB29355D17D6B254B5639722FBF /* Build configuration list for PBXNativeTarget "Pods-LXPageViewWithButtonsViewController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F63A7FA10D46B19F33677D7DC12642 /* Debug */,
+				F1EB91E9EAB2EA028DAB1394EA4BF492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB2E0FBF8E60D367FE043949931500A /* Build configuration list for PBXNativeTarget "Pods-LXPageViewWithButtonsViewController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C9DF4DE008FD622D0735ED1357FE39 /* Debug */,
+				70820A114845994C0F4FC53ECBD55BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA74D05E5744FAD4B2E50091D4268475 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E5A3D013B19F60C7D75AE1B0B58510 /* Debug */,
+				EDDA02D10783F25E003651E7E88B1F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
