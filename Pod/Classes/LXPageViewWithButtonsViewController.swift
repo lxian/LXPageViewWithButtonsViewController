@@ -11,38 +11,12 @@ import UIKit
 let LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification = "LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification"
 
 public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewControllerDelegate {
-    // Appearance settings
-    public struct Appearance {
-        
-        // Buttons
-        public var buttonFontSize              = CGFloat(15)
-        public var buttonBackgroundColor       = UIColor.whiteColor()
-        public var buttonTitleColor            = UIColor.grayColor()
-        public var buttonTitleSelectedColor    = UIColor.redColor()
-        public var buttonsHeight               = CGFloat(30)
-        public var buttonsXOffset              = CGFloat(50)
-        public var buttonsGap                  = CGFloat(0)
-        public var buttonWidth                 = CGFloat(0)
-        public var buttonsCount : Int = 0 {
-            didSet {
-                buttonWidth = (CGRectGetWidth(UIScreen.mainScreen().bounds) - buttonsXOffset * 2 - buttonsGap * CGFloat(buttonsCount - 1)) / CGFloat(buttonsCount)
-            }
-        }
-        public func buttonFrame(idx: Int) -> CGRect {
-            return CGRect(x: buttonsXOffset + buttonWidth * CGFloat(idx) + buttonsGap * CGFloat(idx - 1), y: 0, width: buttonWidth, height: buttonsHeight)
-        }
-        
-        // Selection Indicator
-        public var selectionIndicatorColor    = UIColor.redColor()
-        public var selectionIndicatorHeight   = CGFloat(2)
-        public func selectionIndicatorFrame(idx: Int) -> CGRect {
-            return CGRect(x: buttonsXOffset + buttonWidth * CGFloat(idx) + buttonsGap * CGFloat(idx - 1), y: buttonsHeight - selectionIndicatorHeight, width: buttonWidth, height: selectionIndicatorHeight)
-        }
-        
-        // whole view
-        public var viewBackgroundColor: UIColor = UIColor.whiteColor()
-    }
-    public var appearance = Appearance()
+    // appearance configs
+    // global appearance
+    public static var appearance = Appearance()
+    // copy global appearance settings as the inial setting
+    public var appearance: Appearance = LXPageViewWithButtonsViewController.appearance
+    
     
     // page view controller
     public let pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
@@ -109,7 +83,7 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         NSLayoutConstraint.activateConstraints([
             NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: appearance.buttonsHeight),
+            NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: appearance.button.buttonsHeight),
             NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .Width, relatedBy: .Equal, toItem: self.view, attribute: .Width, multiplier: 1, constant: 0)
             ])
         
@@ -128,17 +102,17 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         
         guard let vcs = self.viewControllers else { return }
         
-        appearance.buttonsCount = vcs.count
+        appearance.button.buttonsCount = vcs.count
         
         self.selectionButtons = [UIButton]()
         for (idx, vc) in vcs.enumerate() {
             let btn = UIButton(frame: appearance.buttonFrame(idx))
             btn.translatesAutoresizingMaskIntoConstraints = true
             btn.setTitle(vc.title, forState: .Normal)
-            btn.setTitleColor(appearance.buttonTitleColor, forState: .Normal)
-            btn.setTitleColor(appearance.buttonTitleSelectedColor, forState: .Selected)
-            btn.backgroundColor = appearance.buttonBackgroundColor
-            btn.titleLabel?.font = UIFont.init(name: "SFUIText-Semibold", size: appearance.buttonFontSize)
+            btn.setTitleColor(appearance.button.buttonTitleColor, forState: .Normal)
+            btn.setTitleColor(appearance.button.buttonTitleSelectedColor, forState: .Selected)
+            btn.backgroundColor = appearance.button.buttonBackgroundColor
+            btn.titleLabel?.font = UIFont.init(name: "SFUIText-Semibold", size: appearance.button.buttonFontSize)
             btn.titleLabel?.textAlignment = .Center
             
             btn.tag = idx
@@ -165,7 +139,7 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     
     public func setupSelectionIndicator() {
         selectionIndicatorView.translatesAutoresizingMaskIntoConstraints = true
-        selectionIndicatorView.backgroundColor = appearance.selectionIndicatorColor
+        selectionIndicatorView.backgroundColor = appearance.selectionIndicator.selectionIndicatorColor
         selectionIndicatorView.frame = appearance.selectionIndicatorFrame(currentIdx)
         selectionButtonsContainerView.addSubview(selectionIndicatorView)
         selectionButtonsContainerView.bringSubviewToFront(selectionIndicatorView)
@@ -198,7 +172,7 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     public func updateSelectionIndicatorPosition(offsetX: CGFloat) {
         var frame = appearance.selectionIndicatorFrame(currentIdx)
         guard let pageViewScrollView = pageViewScrollView else { return }
-        frame.origin.x += ((offsetX - pageViewScrollView.frame.size.width) / pageViewScrollView.frame.size.width) * appearance.buttonWidth
+        frame.origin.x += ((offsetX - pageViewScrollView.frame.size.width) / pageViewScrollView.frame.size.width) * appearance.button.buttonWidth
         selectionIndicatorView.frame = frame
     }
     
