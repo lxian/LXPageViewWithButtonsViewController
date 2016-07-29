@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 extension LXPageViewWithButtonsViewController {
     public struct Appearance {
         // Buttons
@@ -46,7 +48,8 @@ extension LXPageViewWithButtonsViewController {
             return CGRect(x: button.buttonsXOffset + button.buttonWidth * CGFloat(idx) + button.buttonsGap * CGFloat(idx - 1), y: 0, width: button.buttonWidth, height: button.buttonsHeight)
         }
         func selectionIndicatorFrame(idx: Int) -> CGRect {
-            return CGRect(x: button.buttonsXOffset + button.buttonWidth * CGFloat(idx) + button.buttonsGap * CGFloat(idx - 1), y: button.buttonsHeight - selectionIndicator.selectionIndicatorHeight, width: button.buttonWidth, height: selectionIndicator.selectionIndicatorHeight)
+            let btnframe = buttonFrame(idx)
+            return CGRect(x: btnframe.origin.x , y: button.buttonsHeight - selectionIndicator.selectionIndicatorHeight, width: btnframe.size.width, height: selectionIndicator.selectionIndicatorHeight)
         }
         
     }

@@ -20,7 +20,24 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     
     // page view controller
     public let pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
-    var pageViewScrollView : UIView?
+    // the scrollView inside the pageViewController
+    private var _pageViewScrollView: UIView?
+    var pageViewScrollView : UIView? {
+        if _pageViewScrollView == nil {
+            var views : [UIView] = [pageViewController.view]
+            while views.count > 0 {
+                let view = views[0]
+                if view.isKindOfClass(UIScrollView) {
+                    _pageViewScrollView = view
+                    break
+                }
+                views.appendContentsOf(view.subviews)
+                views.removeAtIndex(0)
+            }
+        }
+        return _pageViewScrollView
+    }
+    // data source required by UIpageViewController
     let pageViewControllerDataSource = LXPageViewWithButtonsViewControllerDataSource()
     var currentIdx = 0 {
         didSet {
@@ -37,7 +54,6 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     public var viewControllers : [UIViewController]? {
         didSet {
             pageViewControllerDataSource.viewControllers = self.viewControllers
-            setupButtons()
         }
     }
     public var currentViewController: UIViewController? {
@@ -52,6 +68,7 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         super.viewDidLoad()
         self.view.backgroundColor = appearance.viewBackgroundColor
         
+        setupButtons()
         setupPageViewController()
     }
     
@@ -144,16 +161,6 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         selectionButtonsContainerView.addSubview(selectionIndicatorView)
         selectionButtonsContainerView.bringSubviewToFront(selectionIndicatorView)
         
-        var views : [UIView] = [pageViewController.view]
-        while views.count > 0 {
-            let view = views[0]
-            if view.isKindOfClass(UIScrollView) {
-                self.pageViewScrollView = view
-                break
-            }
-            views.appendContentsOf(view.subviews)
-            views.removeAtIndex(0)
-        }
         pageViewScrollView?.addObserver(self, forKeyPath: "contentOffset", options: .New, context: &LXPageViewWithButtonsViewControllerScrollingViewContentOffsetXContext)
     }
     
