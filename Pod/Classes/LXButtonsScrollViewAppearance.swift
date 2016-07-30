@@ -1,5 +1,5 @@
 //
-//  LXPageViewWithButtonsAppearance.swift
+//  LXButtonsScrollViewAppearance.swift
 //  Pods
 //
 //  Created by XianLi on 21/7/2016.
@@ -13,13 +13,14 @@ private let DEFAULT_FOREGROUND_COLOR                    = UIColor.grayColor()
 private let DEFAULT_FOREGROUND_COLOR_SELECTED           = UIColor.redColor()
 private let DEFAULT_BACKGROUND_COLOR                    = UIColor.clearColor()
 private let DEFAULT_BUTTON_WIDTH:CGFloat                = 70
-private let DEFAULT_BUTTON_HEIGHT:CGFloat               = 70
+private let DEFAULT_BUTTON_HEIGHT:CGFloat               = 30
 private let DEFAULT_MARGIN                              = UIEdgeInsetsZero
 private let DEFAULT_GAP:CGFloat                         = 0
 private let DEFAULT_SELECTION_INDICATOR_COLOR           = UIColor.redColor()
 private let DEFAULT_SELECTION_INDICATOR_HEIGHT:CGFloat  = 2
 
-extension LXPageViewWithButtonsViewController {
+/// The appreance settings of the selection buttons
+extension LXButtonsScrollView {
     public struct Appearance {
         /// Buttons
         public struct Button {
@@ -56,28 +57,5 @@ extension LXPageViewWithButtonsViewController {
             public var height:CGFloat              = DEFAULT_SELECTION_INDICATOR_HEIGHT
         }
         public var selectionIndicator = SelectionIndicator()
-       
-        
-        /// whole view
-        public var viewBackgroundColor: UIColor = UIColor.whiteColor()
-        
-        /// frame calculation functions
-        func buttonViewSize() -> CGSize {
-            let width  = CGFloat(button.count) * button.width + CGFloat(button.count - 1) * button.gap + button.margin.left + button.margin.right
-            let height = button.height + button.margin.top + button.margin.bottom
-            return CGSizeMake(width, height)
-        }
-        func buttonFrame(idx: Int) -> CGRect {
-            let idx = CGFloat(idx)
-            return CGRectMake(button.margin.left + (button.width + button.gap) * idx,
-                              button.margin.top,
-                              button.width,
-                              button.height)
-        }
-        func selectionIndicatorFrame(idx: Int) -> CGRect {
-            let btnframe = buttonFrame(idx)
-            return CGRect(x: btnframe.origin.x , y: button.margin.top + button.height - selectionIndicator.height, width: btnframe.size.width, height: selectionIndicator.height)
-        }
-        
     }
 }
