@@ -11,16 +11,9 @@ import UIKit
 let LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification = "LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification"
 
 public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewControllerDelegate {
-    // appearance configs
-    // global appearance
-    public static var appearance = Appearance()
-    // copy global appearance settings as the inial setting
-    public var appearance: Appearance = LXPageViewWithButtonsViewController.appearance
-    
-    
-    // page view controller
+    /// page view controller
     public let pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
-    // the scrollView inside the pageViewController
+    /// the scrollView inside the pageViewController
     private var _pageViewScrollView: UIView?
     var pageViewScrollView : UIView? {
         if _pageViewScrollView == nil {
@@ -37,7 +30,9 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         }
         return _pageViewScrollView
     }
-    // data source required by UIpageViewController
+    /// buttons
+    public let buttonsScrollView: LXButtonsScrollView = LXButtonsScrollView()
+    /// data source required by UIpageViewController
     let pageViewControllerDataSource = LXPageViewWithButtonsViewControllerDataSource()
     var currentIdx = 0 {
         didSet {
@@ -45,8 +40,15 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         }
     }
     func currentIdxUpdated() {
-        self.selectionButtons?.forEach { $0.selected = false }
-        self.selectionButtons?[currentIdx].selected = true
+        buttonsScrollView.buttons.forEach { $0.selected = false }
+        buttonsScrollView.buttons[currentIdx].selected = true
+        
+        /// scroll the scroll view if needed
+        dispatch_async(dispatch_get_main_queue()) { [weak self] in
+            guard let bself = self else { return }
+            let targetRect = bself.buttonsScrollView.calButtonFrame(bself.currentIdx)
+            bself.buttonsScrollView.scrollRectToVisible(targetRect, animated: true)
+        }
         
         NSNotificationCenter.defaultCenter().postNotificationName(LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification , object: self)
     }
@@ -60,16 +62,10 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         return viewControllers?[currentIdx]
     }
     
-    internal var selectionButtons : [UIButton]?
-    internal let selectionButtonsContainerView = UIView()
-    internal let selectionIndicatorView = UIView()
-    
     public override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = appearance.viewBackgroundColor
-        
-        setupButtons()
         setupPageViewController()
+        setupButtons()
     }
     
     private var viewAppearedOnce = false
@@ -92,22 +88,22 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     
     public override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        selectionButtonsContainerView.translatesAutoresizingMaskIntoConstraints = false
+        buttonsScrollView.translatesAutoresizingMaskIntoConstraints = false
         let pageViewControllerView = pageViewController.view
         pageViewControllerView.translatesAutoresizingMaskIntoConstraints = false
         
         
         NSLayoutConstraint.activateConstraints([
-            NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: appearance.button.buttonsHeight),
-            NSLayoutConstraint(item: selectionButtonsContainerView, attribute: .Width, relatedBy: .Equal, toItem: self.view, attribute: .Width, multiplier: 1, constant: 0)
+            NSLayoutConstraint(item: buttonsScrollView, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: buttonsScrollView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: buttonsScrollView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 30),
+            NSLayoutConstraint(item: buttonsScrollView, attribute: .Width, relatedBy: .Equal, toItem: self.view, attribute: .Width, multiplier: 1, constant: 0)
             ])
         
         // layout pageViewController
         NSLayoutConstraint.activateConstraints([
             NSLayoutConstraint(item: pageViewControllerView, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: pageViewControllerView, attribute: .Top, relatedBy: .Equal, toItem: selectionButtonsContainerView, attribute: .Bottom, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: pageViewControllerView, attribute: .Top, relatedBy: .Equal, toItem: buttonsScrollView, attribute: .Bottom, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: pageViewControllerView, attribute: .Bottom, relatedBy: .Equal, toItem: self.bottomLayoutGuide, attribute: .Top, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: pageViewControllerView, attribute: .Width, relatedBy: .Equal, toItem: self.view, attribute: .Width, multiplier: 1, constant: 0)
             ])
@@ -115,32 +111,17 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     
     // MARK: - Setups
     public func setupButtons() {
-        self.view.addSubview(selectionButtonsContainerView)
+        guard let viewControllers = viewControllers else { return }
+        buttonsScrollView.setButtonTitles( viewControllers.map{ return $0.title ?? "" })
+        view.addSubview(buttonsScrollView)
         
-        guard let vcs = self.viewControllers else { return }
-        
-        appearance.button.buttonsCount = vcs.count
-        
-        self.selectionButtons = [UIButton]()
-        for (idx, vc) in vcs.enumerate() {
-            let btn = UIButton(frame: appearance.buttonFrame(idx))
-            btn.translatesAutoresizingMaskIntoConstraints = true
-            btn.setTitle(vc.title, forState: .Normal)
-            btn.setTitleColor(appearance.button.buttonTitleColor, forState: .Normal)
-            btn.setTitleColor(appearance.button.buttonTitleSelectedColor, forState: .Selected)
-            btn.backgroundColor = appearance.button.buttonBackgroundColor
-            btn.titleLabel?.font = UIFont.init(name: "SFUIText-Semibold", size: appearance.button.buttonFontSize)
-            btn.titleLabel?.textAlignment = .Center
-            
+        for (idx, btn) in buttonsScrollView.buttons.enumerate() {
             btn.tag = idx
             btn.addTarget(self, action: #selector(LXPageViewWithButtonsViewController.selectionButtonTapped(_:)), forControlEvents: .TouchUpInside)
-            
-            self.selectionButtons?.append(btn)
-            self.selectionButtonsContainerView.addSubview(btn)
         }
-        self.selectionButtons?[currentIdx].selected = true
         
-        setupSelectionIndicator()
+        buttonsScrollView.buttons[currentIdx].selected = true
+        buttonsScrollView.selectionIndicator.frame = buttonsScrollView.selectionIndicatorFrame(currentIdx)
     }
     
     public func setupPageViewController() {
@@ -150,19 +131,11 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         self.view.addSubview(pageViewController.view)
         self.addChildViewController(pageViewController)
         pageViewController.didMoveToParentViewController(self)
-    }
-    
-    var LXPageViewWithButtonsViewControllerScrollingViewContentOffsetXContext : Int32 = 0
-    
-    public func setupSelectionIndicator() {
-        selectionIndicatorView.translatesAutoresizingMaskIntoConstraints = true
-        selectionIndicatorView.backgroundColor = appearance.selectionIndicator.selectionIndicatorColor
-        selectionIndicatorView.frame = appearance.selectionIndicatorFrame(currentIdx)
-        selectionButtonsContainerView.addSubview(selectionIndicatorView)
-        selectionButtonsContainerView.bringSubviewToFront(selectionIndicatorView)
         
         pageViewScrollView?.addObserver(self, forKeyPath: "contentOffset", options: .New, context: &LXPageViewWithButtonsViewControllerScrollingViewContentOffsetXContext)
     }
+    
+    var LXPageViewWithButtonsViewControllerScrollingViewContentOffsetXContext : Int32 = 0
     
     // MARK: - Selection Indicator
     override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
@@ -177,10 +150,10 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     }
     
     public func updateSelectionIndicatorPosition(offsetX: CGFloat) {
-        var frame = appearance.selectionIndicatorFrame(currentIdx)
+        var frame = buttonsScrollView.selectionIndicatorFrame(currentIdx)
         guard let pageViewScrollView = pageViewScrollView else { return }
-        frame.origin.x += ((offsetX - pageViewScrollView.frame.size.width) / pageViewScrollView.frame.size.width) * appearance.button.buttonWidth
-        selectionIndicatorView.frame = frame
+        frame.origin.x += ((offsetX - pageViewScrollView.frame.size.width) / pageViewScrollView.frame.size.width) * buttonsScrollView.appearance.button.width
+        buttonsScrollView.selectionIndicator.frame = frame
     }
     
     // MARK: - Buttons
@@ -199,12 +172,14 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         while nextIdx != idx  {
             nextIdx  += ((dir == .Forward) ? 1 : -1)
             dispatch_async(dispatch_get_main_queue(), { [weak self, nextIdx, vcs, dir] in
-                guard let wself = self else { return }
-                wself.pageViewController.setViewControllers([vcs[nextIdx]], direction: dir, animated: true) { (finished) in
+                guard let bself = self else { return }
+                /// set the view controllers to be displayed
+                bself.pageViewController.setViewControllers([vcs[nextIdx]], direction: dir, animated: true) { (finished) in
                     if finished {
-                        wself.currentIdx = nextIdx
+                        bself.currentIdx = nextIdx
                     }
                 }
+                
                 })
         }
     }
@@ -220,8 +195,8 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         
         guard let pageViewScrollView = pageViewScrollView else { return }
         dispatch_async(dispatch_get_main_queue()) { [weak self] in
-            guard let wself = self else { return }
-            wself.updateSelectionIndicatorPosition(pageViewScrollView.frame.size.width)
+            guard let bself = self else { return }
+            bself.updateSelectionIndicatorPosition(pageViewScrollView.frame.size.width)
         }
     }
     
