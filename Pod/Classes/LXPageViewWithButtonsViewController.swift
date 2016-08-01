@@ -8,9 +8,14 @@
 import Foundation
 import UIKit
 
-let LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification = "LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification"
+public protocol LXPageViewWithButtonsViewDelegate {
+    func pageViewWithButtonsView(pageViewController: UIPageViewController, buttonsScrollView: LXButtonsScrollView, currentIndexUpdated index: Int)
+}
 
 public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewControllerDelegate {
+    /// delegate
+    var pageViewWithButtonsViewDelegate: LXPageViewWithButtonsViewDelegate?
+    
     /// page view controller
     public let pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
     /// the scrollView inside the pageViewController
@@ -46,8 +51,6 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         buttonsScrollView.buttons.forEach { $0.selected = false }
         buttonsScrollView.buttons[currentIdx].selected = true
         
-        NSNotificationCenter.defaultCenter().postNotificationName(LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification , object: self)
-        
         /// scroll the scroll view if needed
         /// if the target button is already visible, then no need to scorll the view
         if !(targetIndex != nil && buttonsScrollView.isButtonVisible(targetIndex!)) {
@@ -59,6 +62,8 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         if currentIdx == targetIndex {
             targetIndex = nil
         }
+        
+        pageViewWithButtonsViewDelegate?.pageViewWithButtonsView(pageViewController, buttonsScrollView: buttonsScrollView, currentIndexUpdated: currentIdx)
     }
     
     public var viewControllers : [UIViewController]? {
