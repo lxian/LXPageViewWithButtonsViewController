@@ -109,6 +109,7 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     /// override this function if you want other layout
     public func lx_LayoutViews() {
         /// layout the buttons scroll view
+        view.addSubview(buttonsScrollView)
         buttonsScrollView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activateConstraints([
             NSLayoutConstraint(item: buttonsScrollView, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0),
@@ -132,7 +133,6 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     public func setupButtons() {
         guard let viewControllers = viewControllers else { return }
         buttonsScrollView.setButtonTitles( viewControllers.map{ return $0.title ?? "" })
-        view.addSubview(buttonsScrollView)
         
         for (idx, btn) in buttonsScrollView.buttons.enumerate() {
             btn.tag = idx
