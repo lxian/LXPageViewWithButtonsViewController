@@ -76,26 +76,26 @@ public class LXButtonsScrollView: UIScrollView {
     }
     
     /// frame calculation functions
-    func calContentSize() -> CGSize {
+    public func calContentSize() -> CGSize {
         let width  = CGFloat(appearance.button.count) * appearance.button.width + CGFloat(appearance.button.count - 1) * appearance.button.gap + appearance.button.margin.left + appearance.button.margin.right
         let height = appearance.button.height + appearance.button.margin.top + appearance.button.margin.bottom
         return CGSizeMake(width, height)
     }
     
-    func calButtonFrame(idx: Int) -> CGRect {
+    public func calButtonFrame(idx: Int) -> CGRect {
         let idx = CGFloat(idx)
         return CGRectMake(appearance.button.margin.left + (appearance.button.width + appearance.button.gap) * idx,
                           appearance.button.margin.top,
                           appearance.button.width,
                           appearance.button.height)
     }
-    func selectionIndicatorFrame(idx: Int) -> CGRect {
+    public func selectionIndicatorFrame(idx: Int) -> CGRect {
         let btnframe = calButtonFrame(idx)
         return CGRect(x: btnframe.origin.x , y: appearance.button.margin.top + appearance.button.height - appearance.selectionIndicator.height, width: btnframe.size.width, height: appearance.selectionIndicator.height)
     }
     
     /// visibility checking function
-    func isButtonVisible(idx: Int) -> Bool {
+    public func isButtonVisible(idx: Int) -> Bool {
         let btnFrame = calButtonFrame(idx)
         return CGRectGetMinX(self.bounds) <= CGRectGetMinX(btnFrame) &&
                 CGRectGetMaxX(self.bounds) >= CGRectGetMaxX(btnFrame) &&

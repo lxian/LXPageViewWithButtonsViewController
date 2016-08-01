@@ -42,12 +42,12 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     
     /// page index
     var targetIndex: Int?
-    var currentIdx = 0 {
+    public var currentIdx = 0 {
         didSet {
             currentIdxUpdated()
         }
     }
-    func currentIdxUpdated() {
+    public func currentIdxUpdated() {
         buttonsScrollView.buttons.forEach { $0.selected = false }
         buttonsScrollView.buttons[currentIdx].selected = true
         
@@ -107,7 +107,7 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     
     /// layout buttonsScrollView and page view controller's view 
     /// override this function if you want other layout
-    func lx_LayoutViews() {
+    public func lx_LayoutViews() {
         /// layout the buttons scroll view
         buttonsScrollView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activateConstraints([
