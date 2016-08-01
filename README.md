@@ -7,9 +7,9 @@
 
 ![screenshot](https://github.com/lxian/LXPageViewWithButtonsViewController/blob/master/screenshot.png)
 
-LXPageViewWithButtonsViewController wraps the UIPageViewController and adds a row of page selection buttons on the top. It also provides a lot of customization options of the selection buttons to the user.
+LXPageViewWithButtonsViewController wraps the UIPageViewController and provides a scrollabel page selections buttons. It aims to provide a highly customizable UI component. 
 
-It's inspired by [RKSwipeBetweenViewControllers](https://github.com/cwRichardKim/RKSwipeBetweenViewControllers). While RKSwipeBetweenViewControllers fixes the buttons in the navigation bar, LXPageViewWithButtonsViewController chooses to leave the navigation for the user and put the buttons and page view controller inside one view controller.
+It's inspired by [RKSwipeBetweenViewControllers](https://github.com/cwRichardKim/RKSwipeBetweenViewControllers). While RKSwipeBetweenViewControllers fixes the buttons in the navigation bar, LXPageViewWithButtonsViewController allows you to put the selections buttons anywhere you like.
 
 ## Usage
 #### Add view controllers. 
@@ -18,43 +18,48 @@ Button labels will be set to the corresponding view controller's title
 import LXPageViewWithButtonsViewController // import is needed if it is installed by CocoaPods
 ...
 let pwbVC = LXPageViewWithButtonsViewController()
-pwbVC.viewControllers = [dummyViewController0, dummyViewController1, dummyViewController2]
+pwbVC.viewControllers = [someViewController0, someViewController1, someViewController2]
 ```
 
 #### Customize the appreance
-Appreance customization is grouped under `LXPageViewWithButtonsViewController.appreance` property
+Appreance customization is grouped under `LXButtonsScrollView.appearance` property
 ```swift
+/// set appreance globally
+LXButtonsScrollView.appearance.button.foregroundColor.normal = UIColor.Presets.TapLightGray.color
+LXButtonsScrollView.appearance.button.foregroundColor.selected = UIColor.Presets.TextBlack.color
+LXButtonsScrollView.appearance.selectionIndicator.color = UIColor.Presets.TextBlack.color
+
+/// set appearance for a particular view controller
 let pwbVC = LXPageViewWithButtonsViewController()
-pwbVC.viewControllers = [dummyViewController0, dummyViewController1, dummyViewController2]
-
-// Do customization with appreance property
-// For more information, please look into LXPageViewWithButtonsViewController.Appreance struct
-pwbVC.appreance.buttonsGap = 5
-pwbVC.appreance.buttonFontSize = 15
-pwbVC.appreance.buttonBackgroundColor = UIColor(white: 0.95, alpha: 1)
+pwbVC.buttonsScrollView.appearance.button.width = 70
+pwbVC.buttonsScrollView.appearance.button.height = 40
 ```
-List of supported customizations
+List of supported customizations could be found in `LXButtonsScrollViewAppearance.swift`
 ```swift
-// Buttons
-// button width is calculated by the number of view controllers, screen width, buttonsXOffset and buttonsGap
-buttonFontSize
-buttonBackgroundColor
-buttonTitleColor
-buttonTitleSelectedColor
-buttonsHeight
-buttonsXOffset     // the distance between the screen left(right) border and the buttons group, 
-                   // the buttons group is always centered at the screen horizontally 
-buttonsGap         // The gap between buttons
-
-// Selection Indicator
-// the indicator will be of the same width as the button
-selectionIndicatorColor
-selectionIndicatorHeight
-
-// Backgournd color of the whole view
-viewBackgroundColor
+  appearance.button.font.normal
+  appearance.button.font.selected
+  appearance.button.foregroundColor.normal
+  appearance.button.foregroundColor.selected
+  appearance.button.backgroundColor.normal
+  appearance.button.backgroundColor.selected
+  appearance.button.width
+  appearance.button.height
+  appearance.button.margin
+  appearance.button.gap
+  appearance.selectionIndicator.color
+  appearance.selectionIndicator.height
 ```
-For further customizations, users can subclass `LXPageViewWithButtonsViewController` and override `setupButtons` and `setupSelectionIndicator`
+For further customizations, buttons are accessable via `LXButtonsScrollViewAppearance.buttonsScrollView.buttons`.
+
+#### The position of the selection buttons
+By default, the selection buttons are positioned at the top of the page view controller. You can change the layout by override `LXPageViewWithButtonsViewController.lx_LayoutViews`
+```swift
+override func lx_LayoutViews() {
+  /// do layout you want here
+  /// the container view for selection buttons can be accessed by self.buttonsScrollView
+  /// the view for the page view controller is self.pageViewController.view
+}
+```
 
 ## Installation
 
@@ -70,14 +75,6 @@ or
 use_frameworks!
 pod 'LXPageViewWithButtonsViewController', :git=> 'https://github.com/lxian/LXPageViewWithButtonsViewController.git'
 ```
-
-or
-
-If your prefer to not using CocoaPods, you can just add `LXPageViewWithButtonsViewController.swift` and `LXPageViewWithButtonsViewControllerDataSource.swift` to you project
-
-## Further Work
-* Move the buttons group view out. So that users can have the flexibility to put it anywhere they want.
-* Change how the button widths are calculated, allow users to set the button width. So that the button group view can be made scrollable and have any number of buttons
 
 ## Author
 
