@@ -96,11 +96,15 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     
     public override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+        
+        lx_LayoutViews()
+    }
+    
+    /// layout buttonsScrollView and page view controller's view 
+    /// override this function if you want other layout
+    func lx_LayoutViews() {
+        /// layout the buttons scroll view
         buttonsScrollView.translatesAutoresizingMaskIntoConstraints = false
-        let pageViewControllerView = pageViewController.view
-        pageViewControllerView.translatesAutoresizingMaskIntoConstraints = false
-        
-        
         NSLayoutConstraint.activateConstraints([
             NSLayoutConstraint(item: buttonsScrollView, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: buttonsScrollView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0),
@@ -108,7 +112,9 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
             NSLayoutConstraint(item: buttonsScrollView, attribute: .Width, relatedBy: .Equal, toItem: self.view, attribute: .Width, multiplier: 1, constant: 0)
             ])
         
-        // layout pageViewController
+        /// layout page view controllers' view
+        let pageViewControllerView = pageViewController.view
+        pageViewControllerView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activateConstraints([
             NSLayoutConstraint(item: pageViewControllerView, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: pageViewControllerView, attribute: .Top, relatedBy: .Equal, toItem: buttonsScrollView, attribute: .Bottom, multiplier: 1, constant: 0),
