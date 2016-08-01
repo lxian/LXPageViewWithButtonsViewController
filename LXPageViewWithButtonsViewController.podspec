@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/lxian/LXPageViewWithButtonsViewController"
-  s.screenshots      = "https://raw.githubusercontent.com/lxian/LXPageViewWithButtonsViewController/master/screenshot.png"
+  s.screenshots      = "https://raw.githubusercontent.com/lxian/LXPageViewWithButtonsViewController/master/screenshot0.png"
   s.license          = 'MIT'
   s.author           = { "Li Xian" => "lxian2shell@gmail.com" }
   s.source           = { :git => "https://github.com/lxian/LXPageViewWithButtonsViewController.git", :tag => s.version.to_s }
