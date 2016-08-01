@@ -50,7 +50,7 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         
         /// scroll the scroll view if needed
         /// if the target button is already visible, then no need to scorll the view
-        if !(targetIndex != nil && CGRectIntersectsRect(buttonsScrollView.bounds, buttonsScrollView.calButtonFrame(targetIndex!))) {
+        if !(targetIndex != nil && buttonsScrollView.isButtonVisible(targetIndex!)) {
             dispatch_async(dispatch_get_main_queue(), { [weak self] in
                 self?.scrollButtonsViewToCurrentIndex()
                 })

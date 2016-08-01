@@ -94,4 +94,12 @@ public class LXButtonsScrollView: UIScrollView {
         return CGRect(x: btnframe.origin.x , y: appearance.button.margin.top + appearance.button.height - appearance.selectionIndicator.height, width: btnframe.size.width, height: appearance.selectionIndicator.height)
     }
     
+    /// visibility checking function
+    func isButtonVisible(idx: Int) -> Bool {
+        let btnFrame = calButtonFrame(idx)
+        return CGRectGetMinX(self.bounds) <= CGRectGetMinX(btnFrame) &&
+                CGRectGetMaxX(self.bounds) >= CGRectGetMaxX(btnFrame) &&
+                CGRectGetMinY(self.bounds) <= CGRectGetMinY(btnFrame) &&
+                CGRectGetMaxY(self.bounds) >= CGRectGetMaxY(btnFrame)
+    }
 }
