@@ -13,37 +13,10 @@ import LXPageViewWithButtonsViewController
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    func randomColor() -> UIColor {
-        let v = [0, 0, 0].map { (_) -> CGFloat in
-            return CGFloat(arc4random_uniform(255)) / 255.0
-        }
-        return UIColor.init(red: v[0], green: v[1], blue: v[2], alpha: 1)
-    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let pwbVC = LXPageViewWithButtonsViewController()
-        
-        // Add view controllers to LXPageViewWithButtonsViewController
-        // view controller's title will be used as the button's title
-        let vcArr = (0...8).map({ (idx) -> UIViewController in
-            let vc = UIViewController()
-            vc.title = "Page \(String(idx))"
-            vc.view.backgroundColor = randomColor()
-            let label = UILabel()
-            label.text = vc.title
-            label.sizeToFit()
-            vc.view.addSubview(label)
-            return vc
-        })
-        pwbVC.viewControllers = vcArr
-        
-        // Do customization with appreance property
-        // For more information, please look into LXPageViewWithButtonsViewController.Appreance struct
-        pwbVC.buttonsScrollView.appearance.button.width = 70
-        
         self.window?.makeKeyWindow()
-        self.window?.rootViewController = UINavigationController(rootViewController: pwbVC)
+        self.window?.rootViewController = UINavigationController(rootViewController: DemosTableViewController())
         
         return true
     }
