@@ -7,67 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30787D8A1D4B694100A6F52C /* LXButtonsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30787D891D4B694100A6F52C /* LXButtonsScrollView.swift */; };
+		1C9D45E38A840B00CEC91B58ECCEAD79 /* LXPageViewWithButtonsViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EBA72D4FEBA8A787F3702CA2945F /* LXPageViewWithButtonsViewController-dummy.m */; };
+		2C481FD216067FE9A55FA1DBA29ABB91 /* LXPageViewWithButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45251720D921FC0157A9384BCAEB96D4 /* LXPageViewWithButtonsViewController.swift */; };
+		369D83BDD7FCEE6CA2F2C114727CCE9E /* LXButtonsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E21235307F8A9E57CD02B4AE5EEE060 /* LXButtonsScrollView.swift */; };
 		46020C05AE1153F102CBF1C97BE81C38 /* Pods-LXPageViewWithButtonsViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7C286E6D73D6E06AA8E7716AD7500 /* Pods-LXPageViewWithButtonsViewController_Tests-dummy.m */; };
+		50FCB2A08BA8F436D6EC0C0433AB7551 /* LXPageViewWithButtonsViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */; };
 		572167ED8CEC3F6770F6C6259647922D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		5E960CB76A4081F180C9D56FEFDD7E93 /* Pods-LXPageViewWithButtonsViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3C5CC6393624F37D38BB64850DF8CA /* Pods-LXPageViewWithButtonsViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60E59FF58C705ACA620BA64E982B37C8 /* LXPageViewWithButtonsViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AAF057F5C72E9CF0734546E56D344C /* LXPageViewWithButtonsViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EF1D3DA3D6D0EA5C97C5DE3B86D6B56 /* LXPageViewWithButtonsViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AAF057F5C72E9CF0734546E56D344C /* LXPageViewWithButtonsViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4670130E3AB02006BAF55E8D53A07AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		AB655F66F22FC1B00D879EA546C1BF41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		C4AA5CFE15085898DC2310C403F63542 /* LXPageViewWithButtonsViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EBA72D4FEBA8A787F3702CA2945F /* LXPageViewWithButtonsViewController-dummy.m */; };
+		BBECD12E2A38F345FB7CB26D01B2C72D /* LXPageViewWithButtonsViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3AA18690CF064DD528054E47895FEF /* LXPageViewWithButtonsViewControllerDataSource.swift */; };
+		C6246177DFCB3B52AE6FBE2F1DD4A173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		CAEA2DACDE8CCB2876E496BFA9C72E69 /* Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5359A960D71263D43B0C7CCFB52B31B6 /* Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB66447C385CD0962FCD3E6DC053990E /* Pods-LXPageViewWithButtonsViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3223C94141A5332D1569668C97489882 /* Pods-LXPageViewWithButtonsViewController_Example-dummy.m */; };
-		D969658925C40942BD23A0559E22355D /* LXButtonsScrollViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A42ACF7E54453080D72F0FE955B1516 /* LXButtonsScrollViewAppearance.swift */; };
-		DAE712F42380EFF501E49303970C5368 /* LXPageViewWithButtonsViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */; };
-		DBCB108641EE54C852E095F4B09F4915 /* LXPageViewWithButtonsViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA479CA3C287C6C6A99EDE7071BB9DA5 /* LXPageViewWithButtonsViewControllerDataSource.swift */; };
-		ECB734808B875563EDEB2DEA4BC0DBA7 /* LXPageViewWithButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7A0ACB7E5D941A3CE30B6FCD4A5AD /* LXPageViewWithButtonsViewController.swift */; };
+		D25EEBBEA89B360FE1102B7305B568CF /* LXButtonsScrollViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F23DAB7A16B7E49A0ED3D575FD0DC /* LXButtonsScrollViewAppearance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1F7101FFB904665F4674A6E680A619D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E75F1D352E1439E46D5489A26C631F77;
-			remoteInfo = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
-		};
 		3EFEC8B99985DB9796310BB8CB983FAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5650033B6BFB64AC32196690AE123854;
+			remoteGlobalIDString = 5A7DE68A4698E0B961C3A96E34160896;
 			remoteInfo = LXPageViewWithButtonsViewController;
+		};
+		8132FB0803F4DAADCD64D0C2177ECC19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F3E792A42FDDC7555D0D0B7248B0AA4;
+			remoteInfo = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C3C5CC6393624F37D38BB64850DF8CA /* Pods-LXPageViewWithButtonsViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXPageViewWithButtonsViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		1A07D83711BD40DAA928B2369ECB3097 /* Pods-LXPageViewWithButtonsViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXPageViewWithButtonsViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1A42ACF7E54453080D72F0FE955B1516 /* LXButtonsScrollViewAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXButtonsScrollViewAppearance.swift; sourceTree = "<group>"; };
 		1D201472F51925A5310F19C942C30E6D /* Pods-LXPageViewWithButtonsViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LXPageViewWithButtonsViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		24AAF057F5C72E9CF0734546E56D344C /* LXPageViewWithButtonsViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXPageViewWithButtonsViewController-umbrella.h"; sourceTree = "<group>"; };
-		30787D891D4B694100A6F52C /* LXButtonsScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXButtonsScrollView.swift; sourceTree = "<group>"; };
 		3223C94141A5332D1569668C97489882 /* Pods-LXPageViewWithButtonsViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXPageViewWithButtonsViewController_Example-dummy.m"; sourceTree = "<group>"; };
 		359CA8F438E15C7EBB40AAC0F4A8A71C /* LXPageViewWithButtonsViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXPageViewWithButtonsViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45251720D921FC0157A9384BCAEB96D4 /* LXPageViewWithButtonsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXPageViewWithButtonsViewController.swift; sourceTree = "<group>"; };
 		47D213D8541A6CA4FB074C3DC9FF9B57 /* Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5359A960D71263D43B0C7CCFB52B31B6 /* Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXPageViewWithButtonsViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		56233DA3D4E7DE6E163B1C707BCB4BF3 /* LXPageViewWithButtonsViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LXPageViewWithButtonsViewController.modulemap; sourceTree = "<group>"; };
+		5B3AA18690CF064DD528054E47895FEF /* LXPageViewWithButtonsViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXPageViewWithButtonsViewControllerDataSource.swift; sourceTree = "<group>"; };
 		63C8C700F8B388B0AF7510D3288EA42B /* ResourceBundle-LXPageViewWithButtonsViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LXPageViewWithButtonsViewController-Info.plist"; sourceTree = "<group>"; };
 		6E21B1C49DAE72FE668635AE95418F54 /* Pods-LXPageViewWithButtonsViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LXPageViewWithButtonsViewController_Example.modulemap"; sourceTree = "<group>"; };
 		76E308CAF4C0BC96932518EDAD055255 /* Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXPageViewWithButtonsViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		81204BC799C65F733385D1C27654C5FC /* Pods-LXPageViewWithButtonsViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXPageViewWithButtonsViewController_Tests-resources.sh"; sourceTree = "<group>"; };
 		83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXPageViewWithButtonsViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C7A0ACB7E5D941A3CE30B6FCD4A5AD /* LXPageViewWithButtonsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXPageViewWithButtonsViewController.swift; sourceTree = "<group>"; };
 		8417165ABDF726D5C33D4ACF60AD593B /* Pods-LXPageViewWithButtonsViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXPageViewWithButtonsViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8A7A0E6FDA6BBEA5F1170653139C99E0 /* Pods-LXPageViewWithButtonsViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXPageViewWithButtonsViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		91B3EBA72D4FEBA8A787F3702CA2945F /* LXPageViewWithButtonsViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXPageViewWithButtonsViewController-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95A9E3AF4CC4E69820DFAB0B4C1DC8C4 /* Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		98B445E88E68761DD2AD0749010F2ED5 /* Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXPageViewWithButtonsViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9E21235307F8A9E57CD02B4AE5EEE060 /* LXButtonsScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXButtonsScrollView.swift; sourceTree = "<group>"; };
 		A1FDFB9BFF0EB103263432AEB31B7B09 /* Pods-LXPageViewWithButtonsViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXPageViewWithButtonsViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A68F23DAB7A16B7E49A0ED3D575FD0DC /* LXButtonsScrollViewAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXButtonsScrollViewAppearance.swift; sourceTree = "<group>"; };
 		ADEF1AE1C43E955ED0457464FA07F546 /* Pods-LXPageViewWithButtonsViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXPageViewWithButtonsViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B9AF6B63F1CE2405A4A2C4B77B248353 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA479CA3C287C6C6A99EDE7071BB9DA5 /* LXPageViewWithButtonsViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LXPageViewWithButtonsViewControllerDataSource.swift; sourceTree = "<group>"; };
 		CCB7C286E6D73D6E06AA8E7716AD7500 /* Pods-LXPageViewWithButtonsViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXPageViewWithButtonsViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D3F61D1E07243021BC19F33FA1D97191 /* LXPageViewWithButtonsViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXPageViewWithButtonsViewController-prefix.pch"; sourceTree = "<group>"; };
@@ -89,18 +89,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49A8DEBF557B559127529F1E4166BCB8 /* Frameworks */ = {
+		D4DECC5A69E9935E229933CE9CDD8720 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB655F66F22FC1B00D879EA546C1BF41 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78D02B488D09605F232F352E13506540 /* Frameworks */ = {
+		E7B90D6911E97B5006F823F8E1AA2DD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6246177DFCB3B52AE6FBE2F1DD4A173 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,17 +124,6 @@
 				DE933563D12FF85EBD2723781C78E79B /* Pods_LXPageViewWithButtonsViewController_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2450E84E80918F766B52CE8F532EFDB7 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				83C7A0ACB7E5D941A3CE30B6FCD4A5AD /* LXPageViewWithButtonsViewController.swift */,
-				BA479CA3C287C6C6A99EDE7071BB9DA5 /* LXPageViewWithButtonsViewControllerDataSource.swift */,
-				1A42ACF7E54453080D72F0FE955B1516 /* LXButtonsScrollViewAppearance.swift */,
-				30787D891D4B694100A6F52C /* LXButtonsScrollView.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		397292DBFED82CBF28E3DBE65B70C2F4 /* Support Files */ = {
@@ -169,6 +158,17 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		4451867C55EFEB7313B4D66616770862 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9E21235307F8A9E57CD02B4AE5EEE060 /* LXButtonsScrollView.swift */,
+				A68F23DAB7A16B7E49A0ED3D575FD0DC /* LXButtonsScrollViewAppearance.swift */,
+				45251720D921FC0157A9384BCAEB96D4 /* LXPageViewWithButtonsViewController.swift */,
+				5B3AA18690CF064DD528054E47895FEF /* LXPageViewWithButtonsViewControllerDataSource.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		5C075573390A6C514ED52244DB3E163E /* Pods-LXPageViewWithButtonsViewController_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +185,14 @@
 			);
 			name = "Pods-LXPageViewWithButtonsViewController_Example";
 			path = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Example";
+			sourceTree = "<group>";
+		};
+		67907EC29E3AE199EEC439C6DFA9F36B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4451867C55EFEB7313B4D66616770862 /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -216,14 +224,6 @@
 			path = "Target Support Files/Pods-LXPageViewWithButtonsViewController_Tests";
 			sourceTree = "<group>";
 		};
-		A5FE656585A159D2D1494DC028B268EC /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				2450E84E80918F766B52CE8F532EFDB7 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +235,7 @@
 		CFAF25CDA063E744CD7AC1BDA68B0374 /* LXPageViewWithButtonsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A5FE656585A159D2D1494DC028B268EC /* Pod */,
+				67907EC29E3AE199EEC439C6DFA9F36B /* Pod */,
 				397292DBFED82CBF28E3DBE65B70C2F4 /* Support Files */,
 			);
 			name = LXPageViewWithButtonsViewController;
@@ -253,6 +253,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8AC75C2BC73F51A669D436B6381093F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF1D3DA3D6D0EA5C97C5DE3B86D6B56 /* LXPageViewWithButtonsViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91EE8EBB9D9584456D7A7775D4D4489F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,30 +277,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8E6F4B2B53739D426CC68D92D4C8783 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60E59FF58C705ACA620BA64E982B37C8 /* LXPageViewWithButtonsViewController-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5650033B6BFB64AC32196690AE123854 /* LXPageViewWithButtonsViewController */ = {
+		0F3E792A42FDDC7555D0D0B7248B0AA4 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1DEF335B26E355281A5C4D321DF5565 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController" */;
+			buildConfigurationList = 043608CB93A36ABA9D36CDDCD3746B33 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController" */;
 			buildPhases = (
-				80E28A7F58B7951DF18AFEADBA4FBD6C /* Sources */,
-				49A8DEBF557B559127529F1E4166BCB8 /* Frameworks */,
-				8116E5666D9E0BFEAB761494184CCD5E /* Resources */,
-				B8E6F4B2B53739D426CC68D92D4C8783 /* Headers */,
+				213EB74357C50A73CBF5F810D1391371 /* Sources */,
+				D4DECC5A69E9935E229933CE9CDD8720 /* Frameworks */,
+				7EC61EF11343308A4947F422A22FE8B6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0F0D0201B2506572991B2E6D36E34EF7 /* PBXTargetDependency */,
+			);
+			name = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
+			productName = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
+			productReference = 83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5A7DE68A4698E0B961C3A96E34160896 /* LXPageViewWithButtonsViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B2788F19AFBE586DAD07626CBE286A /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController" */;
+			buildPhases = (
+				BBA780E06C19AF58E06523565DA08E94 /* Sources */,
+				E7B90D6911E97B5006F823F8E1AA2DD8 /* Frameworks */,
+				0A3353EA32ABEAB85BBEE8DFBA59B6CF /* Resources */,
+				8AC75C2BC73F51A669D436B6381093F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B2ADFBF3283B3B7E0F854F4ABF9BA1 /* PBXTargetDependency */,
 			);
 			name = LXPageViewWithButtonsViewController;
 			productName = LXPageViewWithButtonsViewController;
@@ -334,23 +351,6 @@
 			productReference = DE933563D12FF85EBD2723781C78E79B /* Pods_LXPageViewWithButtonsViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E75F1D352E1439E46D5489A26C631F77 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E6E0F5ED179FD56D36264AFD95FF0DF5 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController" */;
-			buildPhases = (
-				C583D32E99F3D78ED465D81FF3DE733B /* Sources */,
-				78D02B488D09605F232F352E13506540 /* Frameworks */,
-				45833288F873B6E19B3354FD1176626C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
-			productName = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
-			productReference = 83B7DA42683A1C5A4956254189B2D941 /* LXPageViewWithButtonsViewController.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -372,8 +372,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5650033B6BFB64AC32196690AE123854 /* LXPageViewWithButtonsViewController */,
-				E75F1D352E1439E46D5489A26C631F77 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */,
+				5A7DE68A4698E0B961C3A96E34160896 /* LXPageViewWithButtonsViewController */,
+				0F3E792A42FDDC7555D0D0B7248B0AA4 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */,
 				9959399C74B3E858ACD41361C8F9372C /* Pods-LXPageViewWithButtonsViewController_Example */,
 				C4CBCE26369DE9345D18866DB8CEBAB5 /* Pods-LXPageViewWithButtonsViewController_Tests */,
 			);
@@ -381,24 +381,31 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		45833288F873B6E19B3354FD1176626C /* Resources */ = {
+		0A3353EA32ABEAB85BBEE8DFBA59B6CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FCB2A08BA8F436D6EC0C0433AB7551 /* LXPageViewWithButtonsViewController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8116E5666D9E0BFEAB761494184CCD5E /* Resources */ = {
+		7EC61EF11343308A4947F422A22FE8B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE712F42380EFF501E49303970C5368 /* LXPageViewWithButtonsViewController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		213EB74357C50A73CBF5F810D1391371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30BC76AC0B6081A3B3D21885A45F9ED1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,22 +414,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80E28A7F58B7951DF18AFEADBA4FBD6C /* Sources */ = {
+		BBA780E06C19AF58E06523565DA08E94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D969658925C40942BD23A0559E22355D /* LXButtonsScrollViewAppearance.swift in Sources */,
-				30787D8A1D4B694100A6F52C /* LXButtonsScrollView.swift in Sources */,
-				C4AA5CFE15085898DC2310C403F63542 /* LXPageViewWithButtonsViewController-dummy.m in Sources */,
-				ECB734808B875563EDEB2DEA4BC0DBA7 /* LXPageViewWithButtonsViewController.swift in Sources */,
-				DBCB108641EE54C852E095F4B09F4915 /* LXPageViewWithButtonsViewControllerDataSource.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C583D32E99F3D78ED465D81FF3DE733B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				369D83BDD7FCEE6CA2F2C114727CCE9E /* LXButtonsScrollView.swift in Sources */,
+				D25EEBBEA89B360FE1102B7305B568CF /* LXButtonsScrollViewAppearance.swift in Sources */,
+				1C9D45E38A840B00CEC91B58ECCEAD79 /* LXPageViewWithButtonsViewController-dummy.m in Sources */,
+				2C481FD216067FE9A55FA1DBA29ABB91 /* LXPageViewWithButtonsViewController.swift in Sources */,
+				BBECD12E2A38F345FB7CB26D01B2C72D /* LXPageViewWithButtonsViewControllerDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,17 +437,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0F0D0201B2506572991B2E6D36E34EF7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
-			target = E75F1D352E1439E46D5489A26C631F77 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */;
-			targetProxy = 1F7101FFB904665F4674A6E680A619D5 /* PBXContainerItemProxy */;
-		};
 		4017B6ED51D2929BA66147ED66A26B82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LXPageViewWithButtonsViewController;
-			target = 5650033B6BFB64AC32196690AE123854 /* LXPageViewWithButtonsViewController */;
+			target = 5A7DE68A4698E0B961C3A96E34160896 /* LXPageViewWithButtonsViewController */;
 			targetProxy = 3EFEC8B99985DB9796310BB8CB983FAA /* PBXContainerItemProxy */;
+		};
+		60B2ADFBF3283B3B7E0F854F4ABF9BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController";
+			target = 0F3E792A42FDDC7555D0D0B7248B0AA4 /* LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController */;
+			targetProxy = 8132FB0803F4DAADCD64D0C2177ECC19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -490,36 +490,7 @@
 			};
 			name = Release;
 		};
-		225E9337F484466318D077154F062EDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LXPageViewWithButtonsViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2A27D5487B81C6A5F1024C2F90732926 /* Debug */ = {
+		2FF69D71EE4797049E00A5247278799C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
 			buildSettings = {
@@ -536,22 +507,35 @@
 			};
 			name = Debug;
 		};
-		301E800448A9605B3351D10CA5974F8D /* Release */ = {
+		498CE5E98FA805071D69910CC1F50C9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LXPageViewWithButtonsViewController";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/ResourceBundle-LXPageViewWithButtonsViewController-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = LXPageViewWithButtonsViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		60F63A7FA10D46B19F33677D7DC12642 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -653,6 +637,23 @@
 			};
 			name = Debug;
 		};
+		CA75EE3A28D21ACBD450CA03F699FFA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LXPageViewWithButtonsViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/ResourceBundle-LXPageViewWithButtonsViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LXPageViewWithButtonsViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -695,36 +696,6 @@
 			};
 			name = Debug;
 		};
-		D91E803E86498E310528BFEFEDB88BCC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LXPageViewWithButtonsViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F1EB91E9EAB2EA028DAB1394EA4BF492 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ADEF1AE1C43E955ED0457464FA07F546 /* Pods-LXPageViewWithButtonsViewController_Example.release.xcconfig */;
@@ -758,14 +729,61 @@
 			};
 			name = Release;
 		};
+		FA8DF5AE9BB5FAD734833E8C8A0B466A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33C8B94FDE7AEE29EA8CA60B9D65F96 /* LXPageViewWithButtonsViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXPageViewWithButtonsViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXPageViewWithButtonsViewController/LXPageViewWithButtonsViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LXPageViewWithButtonsViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		043608CB93A36ABA9D36CDDCD3746B33 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF69D71EE4797049E00A5247278799C /* Debug */,
+				CA75EE3A28D21ACBD450CA03F699FFA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
 				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B2788F19AFBE586DAD07626CBE286A /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498CE5E98FA805071D69910CC1F50C9C /* Debug */,
+				FA8DF5AE9BB5FAD734833E8C8A0B466A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -784,24 +802,6 @@
 			buildConfigurations = (
 				A6C9DF4DE008FD622D0735ED1357FE39 /* Debug */,
 				70820A114845994C0F4FC53ECBD55BA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E6E0F5ED179FD56D36264AFD95FF0DF5 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController-LXPageViewWithButtonsViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2A27D5487B81C6A5F1024C2F90732926 /* Debug */,
-				301E800448A9605B3351D10CA5974F8D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F1DEF335B26E355281A5C4D321DF5565 /* Build configuration list for PBXNativeTarget "LXPageViewWithButtonsViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D91E803E86498E310528BFEFEDB88BCC /* Debug */,
-				225E9337F484466318D077154F062EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
