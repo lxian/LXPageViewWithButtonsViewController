@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/LXPageViewWithButtonsViewController.svg?style=flat)](http://cocoapods.org/pods/LXPageViewWithButtonsViewController)
 [![Platform](https://img.shields.io/cocoapods/p/LXPageViewWithButtonsViewController.svg?style=flat)](http://cocoapods.org/pods/LXPageViewWithButtonsViewController)
 
-![screenshot](https://github.com/lxian/LXPageViewWithButtonsViewController/blob/master/screenshot0.png)
-![screenshot](https://github.com/lxian/LXPageViewWithButtonsViewController/blob/master/screenshot1.png)
+<img src="https://github.com/lxian/LXPageViewWithButtonsViewController/blob/master/screenshot0.png" width="300">
+<img src="https://github.com/lxian/LXPageViewWithButtonsViewController/blob/master/screenshot1.png" width="300">
 
 LXPageViewWithButtonsViewController wraps the UIPageViewController and provides a scrollabel page selections buttons. It aims to provide a highly customizable UI component. 
 
