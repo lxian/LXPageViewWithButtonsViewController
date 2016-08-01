@@ -26,16 +26,16 @@ extension LXButtonsScrollView {
         public struct Button {
             /// single button properties
             public struct Font {
-                var normal:UIFont              = DEFAULT_FONT
-                var selected:UIFont            = DEFAULT_FONT
+                public var normal:UIFont              = DEFAULT_FONT
+                public var selected:UIFont            = DEFAULT_FONT
             }
             public struct ForegroundColor {
-                var normal:UIColor             = DEFAULT_FOREGROUND_COLOR
-                var selected:UIColor           = DEFAULT_FOREGROUND_COLOR_SELECTED
+                public var normal:UIColor             = DEFAULT_FOREGROUND_COLOR
+                public var selected:UIColor           = DEFAULT_FOREGROUND_COLOR_SELECTED
             }
             public struct BackgroundColor {
-                var normal:UIColor              = DEFAULT_BACKGROUND_COLOR
-                var selected:UIColor            = DEFAULT_BACKGROUND_COLOR
+                public var normal:UIColor              = DEFAULT_BACKGROUND_COLOR
+                public var selected:UIColor            = DEFAULT_BACKGROUND_COLOR
             }
             
             public var font:Font                                   = Font()
