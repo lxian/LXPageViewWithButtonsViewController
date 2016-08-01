@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LXPageViewWithButtonsViewController"
-  s.version          = "0.0.2"
+  s.version          = "0.1.0"
   s.summary          = "A view controller combines UIPageViewController and page selection buttons"
 
   s.description      = <<-DESC
@@ -25,8 +25,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'LXPageViewWithButtonsViewController' => ['Pod/Assets/*.png']
-  }
 
 end
