@@ -9,10 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = "LXPageViewWithButtonsViewController"
   s.version          = "0.1.0"
-  s.summary          = "A view controller combines UIPageViewController and page selection buttons"
+  s.summary          = "combines UIPageViewController and highly customisable page selection tabs"
 
   s.description      = <<-DESC
-                        This view controller wraps a UIPageViewController and adds a row a page selection buttons at the top. So you can either swipe or tap top buttons to navigate through the view controllers you added to it.
+                        LXPageViewWithButtonsViewController wraps the UIPageViewController and provides a scrollabel page selections tab buttons. It aims to provide a highly customizable UI component. It allows the user to layout the selection tabs and pageViewController view freely.
                        DESC
 
   s.homepage         = "https://github.com/lxian/LXPageViewWithButtonsViewController"
