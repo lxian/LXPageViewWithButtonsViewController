@@ -34,6 +34,9 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     public let buttonsScrollView: LXButtonsScrollView = LXButtonsScrollView()
     /// data source required by UIpageViewController
     let pageViewControllerDataSource = LXPageViewWithButtonsViewControllerDataSource()
+    
+    /// page index
+    var targetIndex: Int?
     var currentIdx = 0 {
         didSet {
             currentIdxUpdated()
@@ -43,14 +46,19 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         buttonsScrollView.buttons.forEach { $0.selected = false }
         buttonsScrollView.buttons[currentIdx].selected = true
         
+        NSNotificationCenter.defaultCenter().postNotificationName(LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification , object: self)
+        
         /// scroll the scroll view if needed
-        dispatch_async(dispatch_get_main_queue()) { [weak self] in
-            guard let bself = self else { return }
-            let targetRect = bself.buttonsScrollView.calButtonFrame(bself.currentIdx)
-            bself.buttonsScrollView.scrollRectToVisible(targetRect, animated: true)
+        /// if the target button is already visible, then no need to scorll the view
+        if !(targetIndex != nil && CGRectIntersectsRect(buttonsScrollView.bounds, buttonsScrollView.calButtonFrame(targetIndex!))) {
+            dispatch_async(dispatch_get_main_queue(), { [weak self] in
+                self?.scrollButtonsViewToCurrentIndex()
+                })
         }
         
-        NSNotificationCenter.defaultCenter().postNotificationName(LXPageViewWithButtonsViewControllerCurrentViewControllerDidChangeNotification , object: self)
+        if currentIdx == targetIndex {
+            targetIndex = nil
+        }
     }
     
     public var viewControllers : [UIViewController]? {
@@ -156,9 +164,17 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
         buttonsScrollView.selectionIndicator.frame = frame
     }
     
+    func scrollButtonsViewToCurrentIndex() {
+        let targetRect = buttonsScrollView.calButtonFrame(currentIdx)
+        buttonsScrollView.scrollRectToVisible(targetRect, animated: true)
+    }
+    
     // MARK: - Buttons
     public func selectionButtonTapped(btn: UIButton) {
         let idx = btn.tag
+        /// set the target index for scrolling buttons view purpose
+        targetIndex = idx
+        
         guard let vcs = viewControllers where idx >= 0 && idx < vcs.count else {
             return
         }
@@ -179,7 +195,6 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
                         bself.currentIdx = nextIdx
                     }
                 }
-                
                 })
         }
     }
