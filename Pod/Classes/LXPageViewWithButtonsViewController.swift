@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-public protocol LXPageViewWithButtonsViewDelegate {
+public protocol LXPageViewWithButtonsViewDelegate: class {
     func pageViewWithButtonsView(pageViewController: UIPageViewController, buttonsScrollView: LXButtonsScrollView, currentIndexUpdated index: Int)
 }
 
 public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewControllerDelegate {
     /// delegate
-    var pageViewWithButtonsViewDelegate: LXPageViewWithButtonsViewDelegate?
+    public weak var pageViewWithButtonsViewDelegate: LXPageViewWithButtonsViewDelegate?
     
     /// page view controller
     public let pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
