@@ -85,6 +85,7 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     public override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         if !viewAppearedOnce {
+            setupButtons()
             pageViewController.setViewControllers([viewControllers![0]], direction: .Forward, animated: false, completion: nil)
             viewAppearedOnce = true
         }
@@ -144,6 +145,8 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     }
     
     public func setupPageViewController() {
+        if viewControllers == nil { return }
+        
         pageViewController.dataSource = pageViewControllerDataSource
         pageViewController.delegate = self
         

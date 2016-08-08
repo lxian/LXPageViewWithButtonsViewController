@@ -35,6 +35,8 @@ public class LXButtonsScrollView: UIScrollView {
     /// setup buttons with a list of button titles
     /// expected to be executed on the main thread
     public func setButtonTitles(titles: [String]) {
+        buttonTitles = titles
+        
         /// remove (if) any previous added buttons
         buttons.forEach { $0.removeFromSuperview() }
         

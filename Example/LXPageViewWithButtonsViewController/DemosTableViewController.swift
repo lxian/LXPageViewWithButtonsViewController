@@ -41,10 +41,12 @@ class DemosTableViewController: UITableViewController {
             "Tabs in the navigation bar"
         ]
         
+        /// Default (Tabs at the top)
         let defaultVC = LXPageViewWithButtonsViewController()
         defaultVC.viewControllers = randomDummyViewController(8)
         defaultVC.view.backgroundColor = UIColor.lightGrayColor()
         
+        /// Tabs in the navigation bar
         let tabsInNavbarVC = TabsInNavbarPageViewWithButtonsViewController()
         tabsInNavbarVC.viewControllers = randomDummyViewController(8)
         
