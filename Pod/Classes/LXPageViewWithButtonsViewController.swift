@@ -92,7 +92,9 @@ public class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCo
     }
     
     deinit {
-        pageViewScrollView?.removeObserver(self, forKeyPath: "contentOffset")
+        if isViewLoaded() {
+            pageViewScrollView?.removeObserver(self, forKeyPath: "contentOffset")
+        }
     }
     
     public override func didReceiveMemoryWarning() {
