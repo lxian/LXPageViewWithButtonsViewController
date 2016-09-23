@@ -16,7 +16,7 @@ private func randomColor() -> UIColor {
     return UIColor.init(red: v[0], green: v[1], blue: v[2], alpha: 1)
 }
 
-private func randomDummyViewController(count: Int) -> [UIViewController] {
+private func randomDummyViewController(_ count: Int) -> [UIViewController] {
     return (0..<count).map({ (idx) -> UIViewController in
             let vc = UIViewController()
             vc.title = "Page \(String(idx))"
@@ -44,7 +44,7 @@ class DemosTableViewController: UITableViewController {
         /// Default (Tabs at the top)
         let defaultVC = LXPageViewWithButtonsViewController()
         defaultVC.viewControllers = randomDummyViewController(8)
-        defaultVC.view.backgroundColor = UIColor.lightGrayColor()
+        defaultVC.view.backgroundColor = UIColor.lightGray
         
         /// Tabs in the navigation bar
         let tabsInNavbarVC = TabsInNavbarPageViewWithButtonsViewController()
@@ -52,25 +52,25 @@ class DemosTableViewController: UITableViewController {
         
         viewControllers = [defaultVC, tabsInNavbarVC]
         
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewControllers.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
-        cell.textLabel?.text = titles[indexPath.row]
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        cell.textLabel?.text = titles[(indexPath as NSIndexPath).row]
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let vc = viewControllers[indexPath.row]
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = viewControllers[(indexPath as NSIndexPath).row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -78,19 +78,19 @@ class DemosTableViewController: UITableViewController {
 class TabsInNavbarPageViewWithButtonsViewController : LXPageViewWithButtonsViewController {
     override func viewDidLoad() {
         buttonsScrollView.appearance.button.height = 44
-        buttonsScrollView.frame = CGRectMake(100, 0, UIScreen.mainScreen().bounds.size.width - 100 , 44)
+        buttonsScrollView.frame = CGRect(x: 100, y: 0, width: UIScreen.main.bounds.size.width - 100 , height: 44)
         navigationItem.titleView = buttonsScrollView
         super.viewDidLoad()
     }
     
     override func lx_LayoutViews() {
         let pageViewControllerView = pageViewController.view
-        pageViewControllerView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activateConstraints([
-            NSLayoutConstraint(item: pageViewControllerView, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: pageViewControllerView, attribute: .Bottom, relatedBy: .Equal, toItem: self.bottomLayoutGuide, attribute: .Top, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: pageViewControllerView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: pageViewControllerView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1, constant: 0)
+        pageViewControllerView?.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            NSLayoutConstraint(item: pageViewControllerView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: pageViewControllerView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: pageViewControllerView, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: pageViewControllerView, attribute: .right, relatedBy: .equal, toItem: self.view, attribute: .right, multiplier: 1, constant: 0)
             ])
     }
 }

@@ -8,15 +8,15 @@
 
 import UIKit
 
-private let DEFAULT_FONT                                = UIFont.systemFontOfSize(14)
-private let DEFAULT_FOREGROUND_COLOR                    = UIColor.grayColor()
-private let DEFAULT_FOREGROUND_COLOR_SELECTED           = UIColor.redColor()
-private let DEFAULT_BACKGROUND_COLOR                    = UIColor.clearColor()
+private let DEFAULT_FONT                                = UIFont.systemFont(ofSize: 14)
+private let DEFAULT_FOREGROUND_COLOR                    = UIColor.gray
+private let DEFAULT_FOREGROUND_COLOR_SELECTED           = UIColor.red
+private let DEFAULT_BACKGROUND_COLOR                    = UIColor.clear
 private let DEFAULT_BUTTON_WIDTH:CGFloat                = 70
 private let DEFAULT_BUTTON_HEIGHT:CGFloat               = 30
-private let DEFAULT_MARGIN                              = UIEdgeInsetsZero
+private let DEFAULT_MARGIN                              = UIEdgeInsets.zero
 private let DEFAULT_GAP:CGFloat                         = 0
-private let DEFAULT_SELECTION_INDICATOR_COLOR           = UIColor.redColor()
+private let DEFAULT_SELECTION_INDICATOR_COLOR           = UIColor.red
 private let DEFAULT_SELECTION_INDICATOR_HEIGHT:CGFloat  = 2
 
 /// The appreance settings of the selection buttons

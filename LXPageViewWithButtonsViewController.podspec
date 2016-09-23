@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LXPageViewWithButtonsViewController"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "combines UIPageViewController and highly customisable page selection tabs"
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.screenshots      = "https://raw.githubusercontent.com/lxian/LXPageViewWithButtonsViewController/master/screenshot0.png"
   s.license          = 'MIT'
   s.author           = { "Li Xian" => "lxian2shell@gmail.com" }
-  s.source           = { :git => "https://github.com/lxian/LXPageViewWithButtonsViewController.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/lxian/LXPageViewWithButtonsViewController.git", :tag => s.version.to_s, :branch => 'swift3' }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

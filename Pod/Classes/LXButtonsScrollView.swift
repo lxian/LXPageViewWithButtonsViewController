@@ -8,15 +8,15 @@
 
 import UIKit
 
-public class LXButtonsScrollView: UIScrollView {
+open class LXButtonsScrollView: UIScrollView {
     /// config global appearce settings via LXButtonsScrollView.appreance
-    public static var appearance:Appearance = Appearance()
+    open static var appearance:Appearance = Appearance()
     /// local appearance settings
-    public var appearance:Appearance = LXButtonsScrollView.appearance
+    open var appearance:Appearance = LXButtonsScrollView.appearance
     
-    public var selectionIndicator: UIView
-    public var buttons: [UIButton]
-    private var buttonTitles: [String]
+    open var selectionIndicator: UIView
+    open var buttons: [UIButton]
+    fileprivate var buttonTitles: [String]
     
     override public init(frame: CGRect) {
         buttons = []
@@ -34,7 +34,7 @@ public class LXButtonsScrollView: UIScrollView {
     
     /// setup buttons with a list of button titles
     /// expected to be executed on the main thread
-    public func setButtonTitles(titles: [String]) {
+    open func setButtonTitles(_ titles: [String]) {
         buttonTitles = titles
         
         /// remove (if) any previous added buttons
@@ -53,16 +53,16 @@ public class LXButtonsScrollView: UIScrollView {
                     NSForegroundColorAttributeName: appearance.button.foregroundColor.selected
                 ])
             let btn = UIButton()
-            btn.titleLabel?.textAlignment = .Center
-            btn.setAttributedTitle(attrTitle, forState: .Normal)
-            btn.setAttributedTitle(attrTitleSelected, forState: .Selected)
+            btn.titleLabel?.textAlignment = .center
+            btn.setAttributedTitle(attrTitle, for: UIControlState())
+            btn.setAttributedTitle(attrTitleSelected, for: .selected)
             return btn
         }
         
         /// set up size and frames
         appearance.button.count = titles.count
         self.contentSize = calContentSize()
-        for (idx, btn) in buttons.enumerate() {
+        for (idx, btn) in buttons.enumerated() {
             btn.translatesAutoresizingMaskIntoConstraints = true
             btn.frame = calButtonFrame(idx)
         }
@@ -74,34 +74,34 @@ public class LXButtonsScrollView: UIScrollView {
         selectionIndicator.translatesAutoresizingMaskIntoConstraints = true
         selectionIndicator.backgroundColor = appearance.selectionIndicator.color
         self.addSubview(selectionIndicator)
-        self.bringSubviewToFront(selectionIndicator)
+        self.bringSubview(toFront: selectionIndicator)
     }
     
     /// frame calculation functions
-    public func calContentSize() -> CGSize {
+    open func calContentSize() -> CGSize {
         let width  = CGFloat(appearance.button.count) * appearance.button.width + CGFloat(appearance.button.count - 1) * appearance.button.gap + appearance.button.margin.left + appearance.button.margin.right
         let height = appearance.button.height + appearance.button.margin.top + appearance.button.margin.bottom
-        return CGSizeMake(width, height)
+        return CGSize(width: width, height: height)
     }
     
-    public func calButtonFrame(idx: Int) -> CGRect {
+    open func calButtonFrame(_ idx: Int) -> CGRect {
         let idx = CGFloat(idx)
-        return CGRectMake(appearance.button.margin.left + (appearance.button.width + appearance.button.gap) * idx,
-                          appearance.button.margin.top,
-                          appearance.button.width,
-                          appearance.button.height)
+        return CGRect(x: appearance.button.margin.left + (appearance.button.width + appearance.button.gap) * idx,
+                          y: appearance.button.margin.top,
+                          width: appearance.button.width,
+                          height: appearance.button.height)
     }
-    public func selectionIndicatorFrame(idx: Int) -> CGRect {
+    open func selectionIndicatorFrame(_ idx: Int) -> CGRect {
         let btnframe = calButtonFrame(idx)
         return CGRect(x: btnframe.origin.x , y: appearance.button.margin.top + appearance.button.height - appearance.selectionIndicator.height, width: btnframe.size.width, height: appearance.selectionIndicator.height)
     }
     
     /// visibility checking function
-    public func isButtonVisible(idx: Int) -> Bool {
+    open func isButtonVisible(_ idx: Int) -> Bool {
         let btnFrame = calButtonFrame(idx)
-        return CGRectGetMinX(self.bounds) <= CGRectGetMinX(btnFrame) &&
-                CGRectGetMaxX(self.bounds) >= CGRectGetMaxX(btnFrame) &&
-                CGRectGetMinY(self.bounds) <= CGRectGetMinY(btnFrame) &&
-                CGRectGetMaxY(self.bounds) >= CGRectGetMaxY(btnFrame)
+        return self.bounds.minX <= btnFrame.minX &&
+                self.bounds.maxX >= btnFrame.maxX &&
+                self.bounds.minY <= btnFrame.minY &&
+                self.bounds.maxY >= btnFrame.maxY
     }
 }

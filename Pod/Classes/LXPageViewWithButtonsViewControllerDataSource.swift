@@ -7,20 +7,20 @@
 
 import UIKit
 
-public class LXPageViewWithButtonsViewControllerDataSource: NSObject, UIPageViewControllerDataSource {
+open class LXPageViewWithButtonsViewControllerDataSource: NSObject, UIPageViewControllerDataSource {
     var viewControllers: [UIViewController]?
     
-    public func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        guard let viewControllers = viewControllers, let idx = viewControllers.indexOf(viewController)
-            where idx > 0 else {
+    open func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let viewControllers = viewControllers, let idx = viewControllers.index(of: viewController)
+            , idx > 0 else {
             return nil
         }
         return viewControllers[idx-1]
     }
     
-    public func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        guard let viewControllers = viewControllers, let idx = viewControllers.indexOf(viewController)
-            where idx < viewControllers.count - 1 else {
+    open func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let viewControllers = viewControllers, let idx = viewControllers.index(of: viewController)
+            , idx < viewControllers.count - 1 else {
             return nil
         }
         return viewControllers[idx+1]
