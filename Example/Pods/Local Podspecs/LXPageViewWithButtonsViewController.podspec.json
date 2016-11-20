@@ -1,6 +1,6 @@
 {
   "name": "LXPageViewWithButtonsViewController",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "summary": "combines UIPageViewController and highly customisable page selection tabs",
   "description": "LXPageViewWithButtonsViewController wraps the UIPageViewController and provides a scrollabel page selections tab buttons. It aims to provide a highly customizable UI component. It allows the user to layout the selection tabs and pageViewController view freely.",
   "homepage": "https://github.com/lxian/LXPageViewWithButtonsViewController",
@@ -11,7 +11,8 @@
   },
   "source": {
     "git": "https://github.com/lxian/LXPageViewWithButtonsViewController.git",
-    "tag": "0.1.2"
+    "tag": "0.1.5",
+    "branch": "swift3"
   },
   "platforms": {
     "ios": "8.0"

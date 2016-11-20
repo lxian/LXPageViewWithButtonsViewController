@@ -77,6 +77,7 @@ open class LXPageViewWithButtonsViewController: UIViewController, UIPageViewCont
     
     open override func viewDidLoad() {
         super.viewDidLoad()
+        self.edgesForExtendedLayout = .bottom
         setupPageViewController()
         setupButtons()
     }

@@ -69,12 +69,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 use_frameworks!
-pod "LXPageViewWithButtonsViewController"
-```
-or
-```ruby
-use_frameworks!
-pod 'LXPageViewWithButtonsViewController', :git=> 'https://github.com/lxian/LXPageViewWithButtonsViewController.git'
+pod 'LXPageViewWithButtonsViewController', :git=> 'https://github.com/lxian/LXPageViewWithButtonsViewController.git', branch=> 'swift3'
 ```
 
 ## Author
