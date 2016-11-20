@@ -77,10 +77,11 @@ class DemosTableViewController: UITableViewController {
 
 class TabsInNavbarPageViewWithButtonsViewController : LXPageViewWithButtonsViewController {
     override func viewDidLoad() {
+        super.viewDidLoad()
         buttonsScrollView.appearance.button.height = 44
         buttonsScrollView.frame = CGRect(x: 100, y: 0, width: UIScreen.main.bounds.size.width - 100 , height: 44)
         navigationItem.titleView = buttonsScrollView
-        super.viewDidLoad()
+        self.edgesForExtendedLayout = .all
     }
     
     override func lx_LayoutViews() {
